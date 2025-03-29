@@ -1,0 +1,55 @@
+[0.521s] Invoking command in '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic /usr/bin/cmake --build /home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map -- -j6 -l6
+[0.659s] [100%] Built target turtlebot3_drive
+[0.703s] Invoked command in '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic /usr/bin/cmake --build /home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map -- -j6 -l6
+[0.744s] Invoking command in '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic /usr/bin/cmake --install /home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map
+[0.761s] -- Install configuration: ""
+[0.761s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/lib/hispanotech_map/turtlebot3_drive
+[0.762s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//launch
+[0.762s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//launch/turtlebot3_my_world.launch.py
+[0.762s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models
+[0.762s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1
+[0.763s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes
+[0.763s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/box_labels.png
+[0.764s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/rock1.JPG
+[0.764s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/icra2019-poster-image.png
+[0.764s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SICK_V2_WHITE.jpg
+[0.765s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/FetchLogo-1024x388.png
+[0.765s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_manipulation_challenge_logo.png
+[0.765s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SICK_V2.png
+[0.766s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SCHUNK_logo.jpg
+[0.766s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/warehouse_collision.stl
+[0.766s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/Logo-TheConstruct-primario-NEW-tagline-2.jpg
+[0.766s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version4.dae
+[0.767s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version2.dae
+[0.767s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version3.dae
+[0.767s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/dummy.png
+[0.767s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/Logo-SICK.jpg
+[0.767s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version1.dae
+[0.768s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/EandM.jpg
+[0.768s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/model.sdf
+[0.768s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/model.config
+[0.768s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world
+[0.769s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world/burger.model
+[0.769s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world/burger_pi.model
+[0.770s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf
+[0.770s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf/turtlebot3_burger.urdf
+[0.770s] -- Up-to-date: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf/turtlebot3_burger_pi.urdf
+[0.770s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/include/
+[0.770s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/ament_index/resource_index/package_run_dependencies/hispanotech_map
+[0.771s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/ament_index/resource_index/parent_prefix_path/hispanotech_map
+[0.772s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/ament_prefix_path.sh
+[0.772s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/ament_prefix_path.dsv
+[0.773s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/path.sh
+[0.773s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/path.dsv
+[0.773s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.bash
+[0.774s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.sh
+[0.774s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.zsh
+[0.775s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.dsv
+[0.776s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/package.dsv
+[0.776s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/ament_index/resource_index/packages/hispanotech_map
+[0.777s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.777s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.777s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/hispanotech_mapConfig.cmake
+[0.778s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/hispanotech_mapConfig-version.cmake
+[0.778s] -- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/package.xml
+[0.786s] Invoked command in '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic /usr/bin/cmake --install /home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map
