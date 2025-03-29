@@ -1,0 +1,627 @@
+[0.000000] (-) TimerEvent: {}
+[0.001287] (hispano_slam) JobQueued: {'identifier': 'hispano_slam', 'dependencies': OrderedDict()}
+[0.001785] (hispanotech_map) JobQueued: {'identifier': 'hispanotech_map', 'dependencies': OrderedDict()}
+[0.001964] (hispano_slam) JobStarted: {'identifier': 'hispano_slam'}
+[0.052239] (hispanotech_map) JobStarted: {'identifier': 'hispanotech_map'}
+[0.102332] (-) TimerEvent: {}
+[0.204766] (-) TimerEvent: {}
+[0.307955] (-) TimerEvent: {}
+[0.413031] (-) TimerEvent: {}
+[0.517848] (-) TimerEvent: {}
+[0.535451] (hispanotech_map) JobProgress: {'identifier': 'hispanotech_map', 'progress': 'cmake'}
+[0.537471] (hispanotech_map) Command: {'cmd': ['/usr/bin/cmake', '/home/vboxuser/HispanoTech-UGC-ROS2/src/hispanotech_map', '-DCMAKE_INSTALL_PREFIX=/home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map'], 'cwd': '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('LC_TIME', 'fr_FR.UTF-8'), ('SSH_AGENT_PID', '2127'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('MANAGERPID', '1533'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('ROS_LOG_DIR', '/home/vboxuser/my_logs'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34460'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/vboxuser/HispanoTech-UGC-ROS2/src/hispano_world/models:/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Sentoub:@/tmp/.ICE-unix/2162,unix/Sentoub:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '3c45209f49894841883e818445b4d5a3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9179bbd3_8d49_4115_a859_6e54974cfd2b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.133'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '6'), ('AMENT_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.utf-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/provide_map/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_slam/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_nav2_system/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/custom_interface:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic')]), 'shell': False}
+[0.624603] (-) TimerEvent: {}
+[0.726444] (-) TimerEvent: {}
+[0.831098] (-) TimerEvent: {}
+[0.944020] (-) TimerEvent: {}
+[1.045644] (-) TimerEvent: {}
+[1.151522] (-) TimerEvent: {}
+[1.175439] (hispanotech_map) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.253362] (-) TimerEvent: {}
+[1.360559] (-) TimerEvent: {}
+[1.464142] (-) TimerEvent: {}
+[1.565232] (-) TimerEvent: {}
+[1.657994] (hispanotech_map) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.678233] (-) TimerEvent: {}
+[1.701495] (hispanotech_map) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.735596] (hispano_slam) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/hispano_slam', 'build', '--build-base', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/build', 'install', '--record', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vboxuser/HispanoTech-UGC-ROS2/src/hispano_slam', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'vboxuser', 'LC_TIME': 'fr_FR.UTF-8', 'SSH_AGENT_PID': '2127', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/vboxuser', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'fr_FR.UTF-8', 'MANAGERPID': '1533', 'DBUS_STARTER_BUS_TYPE': 'session', 'ROS_LOG_DIR': '/home/vboxuser/my_logs', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/vboxuser/turtlebot3_ws/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'vboxuser', 'JOURNAL_STREAM': '8:34460', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vboxuser', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/vboxuser/HispanoTech-UGC-ROS2/src/hispano_world/models:/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/Sentoub:@/tmp/.ICE-unix/2162,unix/Sentoub:/tmp/.ICE-unix/2162', 'INVOCATION_ID': '3c45209f49894841883e818445b4d5a3', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9179bbd3_8d49_4115_a859_6e54974cfd2b', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.133', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '6', 'AMENT_PREFIX_PATH': '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.utf-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/provide_map/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_slam/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_nav2_system/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/custom_interface'}, 'shell': False}
+[1.780152] (-) TimerEvent: {}
+[1.883521] (-) TimerEvent: {}
+[1.887771] (hispanotech_map) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.893307] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.984388] (-) TimerEvent: {}
+[2.086671] (-) TimerEvent: {}
+[2.091052] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.111619] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.113376] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.124427] (hispanotech_map) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.174256] (hispano_slam) StdoutLine: {'line': b'running egg_info\n'}
+[2.175999] (hispano_slam) StdoutLine: {'line': b'creating ../../build/hispano_slam/hispano_slam.egg-info\n'}
+[2.176576] (hispano_slam) StdoutLine: {'line': b'writing ../../build/hispano_slam/hispano_slam.egg-info/PKG-INFO\n'}
+[2.177532] (hispano_slam) StdoutLine: {'line': b'writing dependency_links to ../../build/hispano_slam/hispano_slam.egg-info/dependency_links.txt\n'}
+[2.178248] (hispano_slam) StdoutLine: {'line': b'writing entry points to ../../build/hispano_slam/hispano_slam.egg-info/entry_points.txt\n'}
+[2.178631] (hispano_slam) StdoutLine: {'line': b'writing requirements to ../../build/hispano_slam/hispano_slam.egg-info/requires.txt\n'}
+[2.178865] (hispano_slam) StdoutLine: {'line': b'writing top-level names to ../../build/hispano_slam/hispano_slam.egg-info/top_level.txt\n'}
+[2.187369] (-) TimerEvent: {}
+[2.188437] (hispano_slam) StdoutLine: {'line': b"writing manifest file '../../build/hispano_slam/hispano_slam.egg-info/SOURCES.txt'\n"}
+[2.237358] (hispano_slam) StdoutLine: {'line': b"reading manifest file '../../build/hispano_slam/hispano_slam.egg-info/SOURCES.txt'\n"}
+[2.240626] (hispano_slam) StdoutLine: {'line': b"writing manifest file '../../build/hispano_slam/hispano_slam.egg-info/SOURCES.txt'\n"}
+[2.240906] (hispano_slam) StdoutLine: {'line': b'running build\n'}
+[2.241148] (hispano_slam) StdoutLine: {'line': b'running build_py\n'}
+[2.241332] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/build\n'}
+[2.241983] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/build/lib\n'}
+[2.242096] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/build/lib/hispano_slam\n'}
+[2.242334] (hispano_slam) StdoutLine: {'line': b'copying hispano_slam/__init__.py -> /home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/build/lib/hispano_slam\n'}
+[2.245133] (hispano_slam) StdoutLine: {'line': b'running install\n'}
+[2.245637] (hispano_slam) StdoutLine: {'line': b'running install_lib\n'}
+[2.247779] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/lib/python3.8/site-packages/hispano_slam\n'}
+[2.248455] (hispano_slam) StdoutLine: {'line': b'copying /home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/build/lib/hispano_slam/__init__.py -> /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/lib/python3.8/site-packages/hispano_slam\n'}
+[2.249927] (hispano_slam) StdoutLine: {'line': b'byte-compiling /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/lib/python3.8/site-packages/hispano_slam/__init__.py to __init__.cpython-38.pyc\n'}
+[2.252170] (hispano_slam) StdoutLine: {'line': b'running install_data\n'}
+[2.252340] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/ament_index\n'}
+[2.253151] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/ament_index/resource_index\n'}
+[2.253320] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/ament_index/resource_index/packages\n'}
+[2.254715] (hispano_slam) StdoutLine: {'line': b'copying resource/hispano_slam -> /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/ament_index/resource_index/packages\n'}
+[2.255251] (hispano_slam) StdoutLine: {'line': b'copying package.xml -> /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam\n'}
+[2.255489] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam/map\n'}
+[2.256213] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam/rviz\n'}
+[2.257174] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam/launch\n'}
+[2.257498] (hispano_slam) StdoutLine: {'line': b'copying launch/hispano_slam.launch.py -> /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam/launch\n'}
+[2.258093] (hispano_slam) StdoutLine: {'line': b'creating /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam/config\n'}
+[2.258582] (hispano_slam) StdoutLine: {'line': b'copying config/hispano_slam.lua -> /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/share/hispano_slam/config\n'}
+[2.258903] (hispano_slam) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.261730] (hispano_slam) StdoutLine: {'line': b'Copying ../../build/hispano_slam/hispano_slam.egg-info to /home/vboxuser/HispanoTech-UGC-ROS2/install/hispano_slam/lib/python3.8/site-packages/hispano_slam-0.0.0-py3.8.egg-info\n'}
+[2.264705] (hispano_slam) StdoutLine: {'line': b'running install_scripts\n'}
+[2.293125] (hispano_slam) StdoutLine: {'line': b"writing list of installed files to '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispano_slam/install.log'\n"}
+[2.293544] (-) TimerEvent: {}
+[2.314396] (hispanotech_map) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.316356] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.341182] (hispano_slam) CommandEnded: {'returncode': 0}
+[2.393126] (hispano_slam) JobEnded: {'identifier': 'hispano_slam', 'rc': 0}
+[2.394157] (-) TimerEvent: {}
+[2.497271] (-) TimerEvent: {}
+[2.529483] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.549714] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.551230] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.571722] (hispanotech_map) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[2.602378] (-) TimerEvent: {}
+[2.656485] (hispanotech_map) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.657002] (hispanotech_map) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.729091] (-) TimerEvent: {}
+[2.831961] (-) TimerEvent: {}
+[2.934898] (-) TimerEvent: {}
+[3.011750] (hispanotech_map) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[3.023916] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[3.035870] (-) TimerEvent: {}
+[3.082202] (hispanotech_map) StdoutLine: {'line': b'--   Found bullet, version 2.88\n'}
+[3.136663] (-) TimerEvent: {}
+[3.238144] (-) TimerEvent: {}
+[3.339744] (-) TimerEvent: {}
+[3.440823] (-) TimerEvent: {}
+[3.506325] (hispanotech_map) StdoutLine: {'line': b'-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") \n'}
+[3.543294] (-) TimerEvent: {}
+[3.646373] (-) TimerEvent: {}
+[3.689631] (hispanotech_map) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") \n'}
+[3.748544] (-) TimerEvent: {}
+[3.849331] (-) TimerEvent: {}
+[3.871359] (hispanotech_map) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.0.0") \n'}
+[3.963255] (-) TimerEvent: {}
+[3.986970] (hispanotech_map) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[4.064403] (-) TimerEvent: {}
+[4.165956] (-) TimerEvent: {}
+[4.267318] (-) TimerEvent: {}
+[4.368488] (-) TimerEvent: {}
+[4.469303] (-) TimerEvent: {}
+[4.570748] (-) TimerEvent: {}
+[4.674317] (-) TimerEvent: {}
+[4.775864] (-) TimerEvent: {}
+[4.857589] (hispanotech_map) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[4.877580] (-) TimerEvent: {}
+[4.939868] (hispanotech_map) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[4.966933] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.978156] (-) TimerEvent: {}
+[5.006696] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[5.016895] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[5.019222] (hispanotech_map) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[5.031363] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[5.079335] (-) TimerEvent: {}
+[5.079915] (hispanotech_map) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[5.181921] (-) TimerEvent: {}
+[5.208701] (hispanotech_map) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[5.233013] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[5.254305] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[5.277938] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[5.279120] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[5.286676] (-) TimerEvent: {}
+[5.295888] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[5.296256] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[5.315056] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[5.315677] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[5.332726] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[5.334694] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[5.354032] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[5.354849] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[5.371593] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[5.387642] (-) TimerEvent: {}
+[5.491996] (-) TimerEvent: {}
+[5.594489] (-) TimerEvent: {}
+[5.696175] (-) TimerEvent: {}
+[5.732594] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.743629] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[5.744741] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[5.787357] (hispanotech_map) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[5.797632] (-) TimerEvent: {}
+[5.815105] (hispanotech_map) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[5.826375] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[5.882896] (hispanotech_map) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[5.899195] (-) TimerEvent: {}
+[6.000731] (-) TimerEvent: {}
+[6.010578] (hispanotech_map) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[6.027989] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[6.081423] (hispanotech_map) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[6.102518] (-) TimerEvent: {}
+[6.210086] (-) TimerEvent: {}
+[6.216258] (hispanotech_map) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[6.229025] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[6.229953] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[6.276962] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.291755] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[6.310660] (-) TimerEvent: {}
+[6.340881] (hispanotech_map) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[6.412508] (-) TimerEvent: {}
+[6.483955] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[6.497456] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[6.498192] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[6.500750] (hispanotech_map) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[6.503166] (hispanotech_map) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[6.506031] (hispanotech_map) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[6.513349] (-) TimerEvent: {}
+[6.527176] (hispanotech_map) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[6.536027] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.2\n'}
+[6.537544] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[6.538615] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.553075] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.6.0\n'}
+[6.554129] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[6.614875] (-) TimerEvent: {}
+[6.718416] (-) TimerEvent: {}
+[6.778663] (hispanotech_map) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[6.804483] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[6.820538] (-) TimerEvent: {}
+[6.851307] (hispanotech_map) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[6.920720] (-) TimerEvent: {}
+[6.970294] (hispanotech_map) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[6.996612] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[7.026699] (-) TimerEvent: {}
+[7.044525] (hispanotech_map) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[7.129867] (-) TimerEvent: {}
+[7.230114] (hispanotech_map) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[7.230788] (-) TimerEvent: {}
+[7.231217] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[7.232442] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.232945] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[7.245014] (hispanotech_map) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.5.2 (/opt/ros/galactic/share/gazebo_ros_pkgs/cmake)\n'}
+[7.254739] (hispanotech_map) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[7.331802] (-) TimerEvent: {}
+[7.412687] (hispanotech_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.432706] (-) TimerEvent: {}
+[7.462936] (hispanotech_map) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[7.536767] (-) TimerEvent: {}
+[7.638805] (-) TimerEvent: {}
+[7.741489] (-) TimerEvent: {}
+[7.757158] (hispanotech_map) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.829484] (hispanotech_map) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[7.848587] (-) TimerEvent: {}
+[7.950756] (-) TimerEvent: {}
+[8.053546] (-) TimerEvent: {}
+[8.098714] (hispanotech_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.155470] (-) TimerEvent: {}
+[8.257560] (-) TimerEvent: {}
+[8.352808] (hispanotech_map) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[8.358015] (-) TimerEvent: {}
+[8.463914] (-) TimerEvent: {}
+[8.535711] (hispanotech_map) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[8.566407] (-) TimerEvent: {}
+[8.668060] (-) TimerEvent: {}
+[8.770790] (-) TimerEvent: {}
+[8.799766] (hispanotech_map) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[8.819778] (hispanotech_map) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[8.873422] (-) TimerEvent: {}
+[8.892183] (hispanotech_map) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[8.896524] (hispanotech_map) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.974566] (-) TimerEvent: {}
+[9.077900] (-) TimerEvent: {}
+[9.179768] (-) TimerEvent: {}
+[9.281711] (-) TimerEvent: {}
+[9.292861] (hispanotech_map) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[9.398017] (-) TimerEvent: {}
+[9.486903] (hispanotech_map) StdoutLine: {'line': b'-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)\n'}
+[9.504287] (-) TimerEvent: {}
+[9.523841] (hispanotech_map) StdoutLine: {'line': b'-- Found turtlebot3_gazebo: 2.2.4 (/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake)\n'}
+[9.605433] (-) TimerEvent: {}
+[9.707391] (-) TimerEvent: {}
+[9.745437] (hispanotech_map) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.774916] (hispanotech_map) StdoutLine: {'line': b'-- Generating done\n'}
+[9.793139] (hispanotech_map) StdoutLine: {'line': b'-- Build files have been written to: /home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map\n'}
+[9.810120] (-) TimerEvent: {}
+[9.823577] (hispanotech_map) CommandEnded: {'returncode': 0}
+[9.828869] (hispanotech_map) JobProgress: {'identifier': 'hispanotech_map', 'progress': 'build'}
+[9.829130] (hispanotech_map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map', '--', '-j6', '-l6'], 'cwd': '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('LC_TIME', 'fr_FR.UTF-8'), ('SSH_AGENT_PID', '2127'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('MANAGERPID', '1533'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('ROS_LOG_DIR', '/home/vboxuser/my_logs'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34460'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/vboxuser/HispanoTech-UGC-ROS2/src/hispano_world/models:/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Sentoub:@/tmp/.ICE-unix/2162,unix/Sentoub:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '3c45209f49894841883e818445b4d5a3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9179bbd3_8d49_4115_a859_6e54974cfd2b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.133'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '6'), ('AMENT_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.utf-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/provide_map/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_slam/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_nav2_system/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/custom_interface:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic')]), 'shell': False}
+[9.910601] (-) TimerEvent: {}
+[9.926165] (hispanotech_map) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target turtlebot3_drive\x1b[0m\n'}
+[10.012830] (-) TimerEvent: {}
+[10.114306] (-) TimerEvent: {}
+[10.220676] (-) TimerEvent: {}
+[10.323250] (-) TimerEvent: {}
+[10.427042] (-) TimerEvent: {}
+[10.529141] (-) TimerEvent: {}
+[10.590051] (hispanotech_map) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o\x1b[0m\n'}
+[10.631196] (-) TimerEvent: {}
+[10.732140] (-) TimerEvent: {}
+[10.835029] (-) TimerEvent: {}
+[10.937164] (-) TimerEvent: {}
+[11.039665] (-) TimerEvent: {}
+[11.140672] (-) TimerEvent: {}
+[11.250925] (-) TimerEvent: {}
+[11.354229] (-) TimerEvent: {}
+[11.455242] (-) TimerEvent: {}
+[11.559420] (-) TimerEvent: {}
+[11.660754] (-) TimerEvent: {}
+[11.763442] (-) TimerEvent: {}
+[11.868056] (-) TimerEvent: {}
+[11.972714] (-) TimerEvent: {}
+[12.074498] (-) TimerEvent: {}
+[12.186690] (-) TimerEvent: {}
+[12.287902] (-) TimerEvent: {}
+[12.389270] (-) TimerEvent: {}
+[12.498341] (-) TimerEvent: {}
+[12.601646] (-) TimerEvent: {}
+[12.712121] (-) TimerEvent: {}
+[12.816573] (-) TimerEvent: {}
+[12.919476] (-) TimerEvent: {}
+[13.045024] (-) TimerEvent: {}
+[13.152599] (-) TimerEvent: {}
+[13.255613] (-) TimerEvent: {}
+[13.356875] (-) TimerEvent: {}
+[13.460630] (-) TimerEvent: {}
+[13.562149] (-) TimerEvent: {}
+[13.665711] (-) TimerEvent: {}
+[13.767294] (-) TimerEvent: {}
+[13.878626] (-) TimerEvent: {}
+[13.981617] (-) TimerEvent: {}
+[14.084506] (-) TimerEvent: {}
+[14.207905] (-) TimerEvent: {}
+[14.310355] (-) TimerEvent: {}
+[14.412608] (-) TimerEvent: {}
+[14.514617] (-) TimerEvent: {}
+[14.617438] (-) TimerEvent: {}
+[14.719292] (-) TimerEvent: {}
+[14.821163] (-) TimerEvent: {}
+[14.922974] (-) TimerEvent: {}
+[15.026591] (-) TimerEvent: {}
+[15.129082] (-) TimerEvent: {}
+[15.231954] (-) TimerEvent: {}
+[15.334634] (-) TimerEvent: {}
+[15.436885] (-) TimerEvent: {}
+[15.538874] (-) TimerEvent: {}
+[15.639825] (-) TimerEvent: {}
+[15.754030] (-) TimerEvent: {}
+[15.859963] (-) TimerEvent: {}
+[15.973870] (-) TimerEvent: {}
+[16.075851] (-) TimerEvent: {}
+[16.177369] (-) TimerEvent: {}
+[16.309267] (-) TimerEvent: {}
+[16.421327] (-) TimerEvent: {}
+[16.523679] (-) TimerEvent: {}
+[16.627326] (-) TimerEvent: {}
+[16.741153] (-) TimerEvent: {}
+[16.844411] (-) TimerEvent: {}
+[16.974322] (-) TimerEvent: {}
+[17.082055] (-) TimerEvent: {}
+[17.187725] (-) TimerEvent: {}
+[17.289875] (-) TimerEvent: {}
+[17.391775] (-) TimerEvent: {}
+[17.493460] (-) TimerEvent: {}
+[17.603960] (-) TimerEvent: {}
+[17.705213] (-) TimerEvent: {}
+[17.806588] (-) TimerEvent: {}
+[17.909034] (-) TimerEvent: {}
+[18.011257] (-) TimerEvent: {}
+[18.112502] (-) TimerEvent: {}
+[18.213502] (-) TimerEvent: {}
+[18.317816] (-) TimerEvent: {}
+[18.419379] (-) TimerEvent: {}
+[18.520335] (-) TimerEvent: {}
+[18.621775] (-) TimerEvent: {}
+[18.723270] (-) TimerEvent: {}
+[18.826930] (-) TimerEvent: {}
+[18.930002] (-) TimerEvent: {}
+[19.033238] (-) TimerEvent: {}
+[19.136797] (-) TimerEvent: {}
+[19.239335] (-) TimerEvent: {}
+[19.340194] (-) TimerEvent: {}
+[19.470766] (-) TimerEvent: {}
+[19.585965] (-) TimerEvent: {}
+[19.687487] (-) TimerEvent: {}
+[19.792938] (-) TimerEvent: {}
+[19.894793] (-) TimerEvent: {}
+[19.998272] (-) TimerEvent: {}
+[20.099395] (-) TimerEvent: {}
+[20.202870] (-) TimerEvent: {}
+[20.304493] (-) TimerEvent: {}
+[20.409051] (-) TimerEvent: {}
+[20.511464] (-) TimerEvent: {}
+[20.625592] (-) TimerEvent: {}
+[20.727255] (-) TimerEvent: {}
+[20.830934] (-) TimerEvent: {}
+[20.937421] (-) TimerEvent: {}
+[21.038675] (-) TimerEvent: {}
+[21.146833] (-) TimerEvent: {}
+[21.249717] (-) TimerEvent: {}
+[21.369628] (-) TimerEvent: {}
+[21.474849] (-) TimerEvent: {}
+[21.598488] (-) TimerEvent: {}
+[21.753493] (-) TimerEvent: {}
+[21.859538] (-) TimerEvent: {}
+[21.962999] (-) TimerEvent: {}
+[22.072539] (-) TimerEvent: {}
+[22.178633] (-) TimerEvent: {}
+[22.280069] (-) TimerEvent: {}
+[22.381941] (-) TimerEvent: {}
+[22.484834] (-) TimerEvent: {}
+[22.592893] (-) TimerEvent: {}
+[22.694995] (-) TimerEvent: {}
+[22.799127] (-) TimerEvent: {}
+[22.900041] (-) TimerEvent: {}
+[23.003826] (-) TimerEvent: {}
+[23.125057] (-) TimerEvent: {}
+[23.227126] (-) TimerEvent: {}
+[23.375560] (-) TimerEvent: {}
+[23.476968] (-) TimerEvent: {}
+[23.578033] (-) TimerEvent: {}
+[23.680959] (-) TimerEvent: {}
+[23.787266] (-) TimerEvent: {}
+[23.890294] (-) TimerEvent: {}
+[23.994786] (-) TimerEvent: {}
+[24.096895] (-) TimerEvent: {}
+[24.200125] (-) TimerEvent: {}
+[24.301265] (-) TimerEvent: {}
+[24.406281] (-) TimerEvent: {}
+[24.509083] (-) TimerEvent: {}
+[24.610742] (-) TimerEvent: {}
+[24.711690] (-) TimerEvent: {}
+[24.814000] (-) TimerEvent: {}
+[24.917765] (-) TimerEvent: {}
+[25.021306] (-) TimerEvent: {}
+[25.132248] (-) TimerEvent: {}
+[25.239874] (-) TimerEvent: {}
+[25.342830] (-) TimerEvent: {}
+[25.444831] (-) TimerEvent: {}
+[25.546616] (-) TimerEvent: {}
+[25.654844] (-) TimerEvent: {}
+[25.770248] (-) TimerEvent: {}
+[25.877430] (-) TimerEvent: {}
+[25.986730] (-) TimerEvent: {}
+[26.096769] (-) TimerEvent: {}
+[26.206875] (-) TimerEvent: {}
+[26.311111] (-) TimerEvent: {}
+[26.419453] (-) TimerEvent: {}
+[26.523258] (-) TimerEvent: {}
+[26.633646] (-) TimerEvent: {}
+[26.735815] (-) TimerEvent: {}
+[26.840412] (-) TimerEvent: {}
+[26.942825] (-) TimerEvent: {}
+[27.044988] (-) TimerEvent: {}
+[27.146836] (-) TimerEvent: {}
+[27.249205] (-) TimerEvent: {}
+[27.357824] (-) TimerEvent: {}
+[27.458682] (-) TimerEvent: {}
+[27.560212] (-) TimerEvent: {}
+[27.661509] (-) TimerEvent: {}
+[27.762815] (-) TimerEvent: {}
+[27.866968] (-) TimerEvent: {}
+[27.968223] (-) TimerEvent: {}
+[28.070042] (-) TimerEvent: {}
+[28.171487] (-) TimerEvent: {}
+[28.273327] (-) TimerEvent: {}
+[28.393187] (-) TimerEvent: {}
+[28.498447] (-) TimerEvent: {}
+[28.606040] (-) TimerEvent: {}
+[28.707831] (-) TimerEvent: {}
+[28.809019] (-) TimerEvent: {}
+[28.910855] (-) TimerEvent: {}
+[29.018913] (-) TimerEvent: {}
+[29.123462] (-) TimerEvent: {}
+[29.227037] (-) TimerEvent: {}
+[29.328051] (-) TimerEvent: {}
+[29.430242] (-) TimerEvent: {}
+[29.531968] (-) TimerEvent: {}
+[29.640414] (-) TimerEvent: {}
+[29.742058] (-) TimerEvent: {}
+[29.844115] (-) TimerEvent: {}
+[29.951113] (-) TimerEvent: {}
+[30.054801] (-) TimerEvent: {}
+[30.156112] (-) TimerEvent: {}
+[30.258586] (-) TimerEvent: {}
+[30.362144] (-) TimerEvent: {}
+[30.474354] (-) TimerEvent: {}
+[30.628795] (-) TimerEvent: {}
+[30.780565] (-) TimerEvent: {}
+[30.882181] (-) TimerEvent: {}
+[30.984946] (-) TimerEvent: {}
+[31.086178] (-) TimerEvent: {}
+[31.188574] (-) TimerEvent: {}
+[31.289821] (-) TimerEvent: {}
+[31.410843] (-) TimerEvent: {}
+[31.511946] (-) TimerEvent: {}
+[31.613813] (-) TimerEvent: {}
+[31.714739] (-) TimerEvent: {}
+[31.816711] (-) TimerEvent: {}
+[31.926309] (-) TimerEvent: {}
+[32.029010] (-) TimerEvent: {}
+[32.130872] (-) TimerEvent: {}
+[32.231871] (-) TimerEvent: {}
+[32.349241] (-) TimerEvent: {}
+[32.452749] (-) TimerEvent: {}
+[32.558817] (-) TimerEvent: {}
+[32.664941] (-) TimerEvent: {}
+[32.766826] (-) TimerEvent: {}
+[32.871194] (-) TimerEvent: {}
+[33.012915] (-) TimerEvent: {}
+[33.120725] (-) TimerEvent: {}
+[33.229379] (-) TimerEvent: {}
+[33.331675] (-) TimerEvent: {}
+[33.432831] (-) TimerEvent: {}
+[33.534667] (-) TimerEvent: {}
+[33.636443] (-) TimerEvent: {}
+[33.737834] (-) TimerEvent: {}
+[33.840428] (-) TimerEvent: {}
+[33.942259] (-) TimerEvent: {}
+[34.043629] (-) TimerEvent: {}
+[34.146122] (-) TimerEvent: {}
+[34.248313] (-) TimerEvent: {}
+[34.352773] (-) TimerEvent: {}
+[34.453842] (-) TimerEvent: {}
+[34.555571] (-) TimerEvent: {}
+[34.658827] (-) TimerEvent: {}
+[34.760081] (-) TimerEvent: {}
+[34.861446] (-) TimerEvent: {}
+[34.965571] (-) TimerEvent: {}
+[35.070677] (-) TimerEvent: {}
+[35.172391] (-) TimerEvent: {}
+[35.274362] (-) TimerEvent: {}
+[35.417122] (-) TimerEvent: {}
+[35.523242] (-) TimerEvent: {}
+[35.626631] (-) TimerEvent: {}
+[35.727741] (-) TimerEvent: {}
+[35.829308] (-) TimerEvent: {}
+[35.931619] (-) TimerEvent: {}
+[36.032812] (-) TimerEvent: {}
+[36.137909] (-) TimerEvent: {}
+[36.240339] (-) TimerEvent: {}
+[36.341536] (-) TimerEvent: {}
+[36.445508] (-) TimerEvent: {}
+[36.553210] (-) TimerEvent: {}
+[36.655855] (-) TimerEvent: {}
+[36.756713] (-) TimerEvent: {}
+[36.864953] (-) TimerEvent: {}
+[36.966999] (-) TimerEvent: {}
+[37.068582] (-) TimerEvent: {}
+[37.171384] (-) TimerEvent: {}
+[37.272477] (-) TimerEvent: {}
+[37.417036] (-) TimerEvent: {}
+[37.521183] (-) TimerEvent: {}
+[37.627144] (-) TimerEvent: {}
+[37.736465] (-) TimerEvent: {}
+[37.839181] (-) TimerEvent: {}
+[37.970025] (-) TimerEvent: {}
+[38.083637] (-) TimerEvent: {}
+[38.193427] (-) TimerEvent: {}
+[38.300823] (-) TimerEvent: {}
+[38.417575] (-) TimerEvent: {}
+[38.523641] (-) TimerEvent: {}
+[38.625349] (-) TimerEvent: {}
+[38.730851] (-) TimerEvent: {}
+[38.835368] (-) TimerEvent: {}
+[38.936858] (-) TimerEvent: {}
+[39.038955] (-) TimerEvent: {}
+[39.146019] (-) TimerEvent: {}
+[39.248491] (-) TimerEvent: {}
+[39.352112] (-) TimerEvent: {}
+[39.453210] (-) TimerEvent: {}
+[39.559685] (-) TimerEvent: {}
+[39.661231] (-) TimerEvent: {}
+[39.770984] (-) TimerEvent: {}
+[39.875328] (-) TimerEvent: {}
+[39.977342] (-) TimerEvent: {}
+[40.078369] (-) TimerEvent: {}
+[40.191259] (-) TimerEvent: {}
+[40.295798] (-) TimerEvent: {}
+[40.416696] (-) TimerEvent: {}
+[40.521878] (-) TimerEvent: {}
+[40.623651] (-) TimerEvent: {}
+[40.726850] (-) TimerEvent: {}
+[40.833631] (-) TimerEvent: {}
+[40.935697] (-) TimerEvent: {}
+[41.038282] (-) TimerEvent: {}
+[41.144149] (-) TimerEvent: {}
+[41.248066] (-) TimerEvent: {}
+[41.351026] (-) TimerEvent: {}
+[41.452888] (-) TimerEvent: {}
+[41.554934] (-) TimerEvent: {}
+[41.656008] (-) TimerEvent: {}
+[41.761836] (-) TimerEvent: {}
+[41.864582] (-) TimerEvent: {}
+[42.019793] (-) TimerEvent: {}
+[42.121071] (-) TimerEvent: {}
+[42.239325] (-) TimerEvent: {}
+[42.341806] (-) TimerEvent: {}
+[42.447030] (-) TimerEvent: {}
+[42.551263] (-) TimerEvent: {}
+[42.665924] (-) TimerEvent: {}
+[42.769074] (-) TimerEvent: {}
+[42.892875] (-) TimerEvent: {}
+[42.996912] (-) TimerEvent: {}
+[43.098897] (-) TimerEvent: {}
+[43.201060] (-) TimerEvent: {}
+[43.265341] (hispanotech_map) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_drive\x1b[0m\n'}
+[43.302402] (-) TimerEvent: {}
+[43.405486] (-) TimerEvent: {}
+[43.507733] (-) TimerEvent: {}
+[43.616027] (-) TimerEvent: {}
+[43.720847] (-) TimerEvent: {}
+[43.823018] (-) TimerEvent: {}
+[43.924481] (-) TimerEvent: {}
+[44.026778] (-) TimerEvent: {}
+[44.142850] (-) TimerEvent: {}
+[44.278785] (-) TimerEvent: {}
+[44.381334] (-) TimerEvent: {}
+[44.482971] (-) TimerEvent: {}
+[44.580831] (hispanotech_map) StdoutLine: {'line': b'[100%] Built target turtlebot3_drive\n'}
+[44.583781] (-) TimerEvent: {}
+[44.617265] (hispanotech_map) CommandEnded: {'returncode': 0}
+[44.625982] (hispanotech_map) JobProgress: {'identifier': 'hispanotech_map', 'progress': 'install'}
+[44.658779] (hispanotech_map) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map'], 'cwd': '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('LC_TIME', 'fr_FR.UTF-8'), ('SSH_AGENT_PID', '2127'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('MANAGERPID', '1533'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('ROS_LOG_DIR', '/home/vboxuser/my_logs'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34460'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/vboxuser/HispanoTech-UGC-ROS2/src/hispano_world/models:/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Sentoub:@/tmp/.ICE-unix/2162,unix/Sentoub:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', '3c45209f49894841883e818445b4d5a3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9179bbd3_8d49_4115_a859_6e54974cfd2b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.133'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '6'), ('AMENT_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/HispanoTech-UGC-ROS2/build/hispanotech_map'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.utf-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d9b2743fb561b489d084ecd767e82523'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/provide_map/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_slam/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_nav2_system/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/custom_interface:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/provide_map:/home/vboxuser/turtlebot3_ws/install/my_slam:/home/vboxuser/turtlebot3_ws/install/my_nav2_system:/home/vboxuser/turtlebot3_ws/install/my_first_subscriber:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic')]), 'shell': False}
+[44.684336] (hispanotech_map) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.684929] (-) TimerEvent: {}
+[44.686825] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/lib/hispanotech_map/turtlebot3_drive\n'}
+[44.719193] (hispanotech_map) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/lib/hispanotech_map/turtlebot3_drive" to ""\n'}
+[44.719662] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//launch\n'}
+[44.720661] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//launch/turtlebot3_my_world.launch.py\n'}
+[44.720910] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models\n'}
+[44.722348] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1\n'}
+[44.723292] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes\n'}
+[44.723761] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/box_labels.png\n'}
+[44.724162] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/rock1.JPG\n'}
+[44.735943] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/icra2019-poster-image.png\n'}
+[44.737680] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SICK_V2_WHITE.jpg\n'}
+[44.739106] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/FetchLogo-1024x388.png\n'}
+[44.740168] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_manipulation_challenge_logo.png\n'}
+[44.741251] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SICK_V2.png\n'}
+[44.741920] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SCHUNK_logo.jpg\n'}
+[44.742302] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/warehouse_collision.stl\n'}
+[44.743323] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/Logo-TheConstruct-primario-NEW-tagline-2.jpg\n'}
+[44.743609] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version4.dae\n'}
+[44.763885] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version2.dae\n'}
+[44.764129] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version3.dae\n'}
+[44.782747] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/dummy.png\n'}
+[44.783985] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/Logo-SICK.jpg\n'}
+[44.784179] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version1.dae\n'}
+[44.785630] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/EandM.jpg\n'}
+[44.789675] (-) TimerEvent: {}
+[44.790183] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/model.sdf\n'}
+[44.793552] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/model.config\n'}
+[44.793966] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world\n'}
+[44.794310] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world/burger.model\n'}
+[44.794758] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world/burger_pi.model\n'}
+[44.796185] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf\n'}
+[44.796771] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf/turtlebot3_burger.urdf\n'}
+[44.797089] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf/turtlebot3_burger_pi.urdf\n'}
+[44.797555] (hispanotech_map) StderrLine: {'line': b'CMake Error at cmake_install.cmake:70 (file):\n'}
+[44.797782] (hispanotech_map) StderrLine: {'line': b'  file INSTALL cannot find\n'}
+[44.798183] (hispanotech_map) StderrLine: {'line': b'  "/home/vboxuser/HispanoTech-UGC-ROS2/src/hispanotech_map/include": No such\n'}
+[44.798603] (hispanotech_map) StderrLine: {'line': b'  file or directory.\n'}
+[44.801000] (hispanotech_map) StderrLine: {'line': b'\n'}
+[44.802743] (hispanotech_map) StderrLine: {'line': b'\n'}
+[44.813366] (hispanotech_map) CommandEnded: {'returncode': 1}
+[44.830037] (hispanotech_map) JobEnded: {'identifier': 'hispanotech_map', 'rc': 1}
+[44.849980] (-) EventReactorShutdown: {}
