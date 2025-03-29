@@ -1,0 +1,5 @@
+cd HispanoTech-UGC-ROS2
+colcon build --packages-select hispanotech_map
+source install/setup.bash
+
+ros2 launch my_world turtlebot3_my_world.launch.py
