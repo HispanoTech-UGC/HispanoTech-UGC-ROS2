@@ -1,5 +1,6 @@
 colcon build
 
+source ~/HispanoTech-UGC-ROS2/install/setup.bash
 ros2 launch hispanotech_map turtlebot3_my_world.launch.py
 ros2 launch provide_hispano_map provide_hispano_map.launch.py
 ros2 run turtlebot3_teleop teleop_keyboard
