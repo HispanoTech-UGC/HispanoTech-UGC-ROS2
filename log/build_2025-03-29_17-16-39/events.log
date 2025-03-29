@@ -1,0 +1,233 @@
+[0.000000] (-) TimerEvent: {}
+[0.000580] (hispanotech_map) JobQueued: {'identifier': 'hispanotech_map', 'dependencies': OrderedDict()}
+[0.001532] (hispanotech_map) JobStarted: {'identifier': 'hispanotech_map'}
+[0.024496] (hispanotech_map) JobProgress: {'identifier': 'hispanotech_map', 'progress': 'cmake'}
+[0.025271] (hispanotech_map) Command: {'cmd': ['/usr/bin/cmake', '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/hispanotech_map', '-DCMAKE_INSTALL_PREFIX=/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map'], 'cwd': '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'vboxuser'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/proyecto_robotica'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1420'), ('ROS_LOG_DIR', '/home/vboxuser/my_logs'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34782'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jjjj:@/tmp/.ICE-unix/1592,unix/jjjj:/tmp/.ICE-unix/1592'), ('INVOCATION_ID', '8bbbc7cb3c8346a8ac035c7ad887bf44'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9591da39_a35c_4aa0_8442_45ce4d39cdee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/hispanotech_map:/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/hispanotech:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/package_name:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/turtlebot3_ws/build/show_msg:/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/build/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/build/my_first_action:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/hispanotech_map:/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/hispanotech:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/package_name:/home/vboxuser/turtlebot3_ws/install/custom_interface:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic')]), 'shell': False}
+[0.100018] (-) TimerEvent: {}
+[0.200740] (-) TimerEvent: {}
+[0.278401] (hispanotech_map) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300809] (-) TimerEvent: {}
+[0.402791] (-) TimerEvent: {}
+[0.443060] (hispanotech_map) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.457884] (hispanotech_map) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.503126] (-) TimerEvent: {}
+[1.058800] (-) TimerEvent: {}
+[1.062309] (hispanotech_map) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.069686] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.147659] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.152868] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.154151] (hispanotech_map) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.158751] (hispanotech_map) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.158871] (-) TimerEvent: {}
+[1.224229] (hispanotech_map) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.225244] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.259105] (-) TimerEvent: {}
+[1.294539] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.302685] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.303660] (hispanotech_map) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.325744] (hispanotech_map) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[1.359259] (-) TimerEvent: {}
+[1.359656] (hispanotech_map) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.359839] (hispanotech_map) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.459347] (-) TimerEvent: {}
+[1.518907] (hispanotech_map) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[1.527520] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.559681] (-) TimerEvent: {}
+[1.573312] (hispanotech_map) StdoutLine: {'line': b'--   Found bullet, version 2.88\n'}
+[1.659785] (-) TimerEvent: {}
+[1.692078] (hispanotech_map) StdoutLine: {'line': b'-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") \n'}
+[1.744655] (hispanotech_map) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") \n'}
+[1.760808] (-) TimerEvent: {}
+[1.797334] (hispanotech_map) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.0.0") \n'}
+[1.837853] (hispanotech_map) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.861868] (-) TimerEvent: {}
+[1.962203] (-) TimerEvent: {}
+[2.062676] (-) TimerEvent: {}
+[2.135492] (hispanotech_map) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[2.163339] (-) TimerEvent: {}
+[2.173500] (hispanotech_map) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[2.181594] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.196795] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.202377] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.203100] (hispanotech_map) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.207302] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.220001] (hispanotech_map) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.258749] (hispanotech_map) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.263709] (-) TimerEvent: {}
+[2.267312] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.275255] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.281686] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.282113] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.287379] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.287512] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.294034] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.294226] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.299099] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.299322] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.303865] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.304006] (hispanotech_map) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.308599] (hispanotech_map) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.364081] (-) TimerEvent: {}
+[2.401440] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.407193] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[2.407656] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.421844] (hispanotech_map) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[2.430084] (hispanotech_map) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.434038] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.451845] (hispanotech_map) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[2.464342] (-) TimerEvent: {}
+[2.486801] (hispanotech_map) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.495251] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.509922] (hispanotech_map) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[2.544118] (hispanotech_map) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.548336] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[2.549309] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.564433] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.564630] (-) TimerEvent: {}
+[2.570252] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.584020] (hispanotech_map) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[2.627123] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[2.629359] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[2.629426] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.629479] (hispanotech_map) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.629536] (hispanotech_map) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.629586] (hispanotech_map) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.637495] (hispanotech_map) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.641038] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.2\n'}
+[2.641414] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.641722] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.646380] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.6.0\n'}
+[2.646967] (hispanotech_map) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.664904] (-) TimerEvent: {}
+[2.720790] (hispanotech_map) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[2.730742] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.744690] (hispanotech_map) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[2.765176] (-) TimerEvent: {}
+[2.783713] (hispanotech_map) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.795976] (hispanotech_map) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.811301] (hispanotech_map) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[2.843822] (hispanotech_map) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.844577] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[2.845077] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.845612] (hispanotech_map) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[2.852064] (hispanotech_map) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.5.2 (/opt/ros/galactic/share/gazebo_ros_pkgs/cmake)\n'}
+[2.857526] (hispanotech_map) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[2.865684] (-) TimerEvent: {}
+[2.909435] (hispanotech_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.924386] (hispanotech_map) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[2.965763] (-) TimerEvent: {}
+[3.018375] (hispanotech_map) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[3.042227] (hispanotech_map) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[3.074601] (-) TimerEvent: {}
+[3.144647] (hispanotech_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.175108] (-) TimerEvent: {}
+[3.244427] (hispanotech_map) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[3.288549] (-) TimerEvent: {}
+[3.305890] (hispanotech_map) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[3.388944] (-) TimerEvent: {}
+[3.397162] (hispanotech_map) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[3.403964] (hispanotech_map) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[3.430445] (hispanotech_map) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.432189] (hispanotech_map) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.489066] (-) TimerEvent: {}
+[3.578202] (hispanotech_map) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[3.594037] (-) TimerEvent: {}
+[3.641660] (hispanotech_map) StdoutLine: {'line': b'-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)\n'}
+[3.658376] (hispanotech_map) StdoutLine: {'line': b'-- Found turtlebot3_gazebo: 2.2.4 (/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake)\n'}
+[3.694253] (-) TimerEvent: {}
+[3.743690] (hispanotech_map) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.751877] (hispanotech_map) StdoutLine: {'line': b'-- Generating done\n'}
+[3.758650] (hispanotech_map) StdoutLine: {'line': b'-- Build files have been written to: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map\n'}
+[3.765593] (hispanotech_map) CommandEnded: {'returncode': 0}
+[3.768510] (hispanotech_map) JobProgress: {'identifier': 'hispanotech_map', 'progress': 'build'}
+[3.768742] (hispanotech_map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map', '--', '-j2', '-l2'], 'cwd': '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'vboxuser'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/proyecto_robotica'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1420'), ('ROS_LOG_DIR', '/home/vboxuser/my_logs'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34782'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jjjj:@/tmp/.ICE-unix/1592,unix/jjjj:/tmp/.ICE-unix/1592'), ('INVOCATION_ID', '8bbbc7cb3c8346a8ac035c7ad887bf44'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9591da39_a35c_4aa0_8442_45ce4d39cdee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/hispanotech_map:/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/hispanotech:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/package_name:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/turtlebot3_ws/build/show_msg:/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/build/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/build/my_first_action:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/hispanotech_map:/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/hispanotech:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/package_name:/home/vboxuser/turtlebot3_ws/install/custom_interface:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic')]), 'shell': False}
+[3.794402] (-) TimerEvent: {}
+[3.805801] (hispanotech_map) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target turtlebot3_drive\x1b[0m\n'}
+[3.894626] (-) TimerEvent: {}
+[3.998585] (-) TimerEvent: {}
+[4.035753] (hispanotech_map) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o\x1b[0m\n'}
+[4.098696] (-) TimerEvent: {}
+[4.199178] (-) TimerEvent: {}
+[4.299824] (-) TimerEvent: {}
+[5.055904] (-) TimerEvent: {}
+[5.537725] (-) TimerEvent: {}
+[6.048947] (-) TimerEvent: {}
+[7.049313] (-) TimerEvent: {}
+[7.159353] (-) TimerEvent: {}
+[7.271907] (-) TimerEvent: {}
+[7.458155] (-) TimerEvent: {}
+[7.571722] (-) TimerEvent: {}
+[7.948839] (-) TimerEvent: {}
+[8.488130] (-) TimerEvent: {}
+[8.911435] (-) TimerEvent: {}
+[9.049328] (-) TimerEvent: {}
+[9.342850] (-) TimerEvent: {}
+[9.533241] (-) TimerEvent: {}
+[9.685900] (-) TimerEvent: {}
+[9.920714] (-) TimerEvent: {}
+[10.045049] (-) TimerEvent: {}
+[10.574514] (-) TimerEvent: {}
+[10.613117] (hispanotech_map) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_drive\x1b[0m\n'}
+[10.675471] (-) TimerEvent: {}
+[10.799444] (-) TimerEvent: {}
+[10.950125] (-) TimerEvent: {}
+[10.967038] (hispanotech_map) StdoutLine: {'line': b'[100%] Built target turtlebot3_drive\n'}
+[10.982059] (hispanotech_map) CommandEnded: {'returncode': 0}
+[10.983176] (hispanotech_map) JobProgress: {'identifier': 'hispanotech_map', 'progress': 'install'}
+[10.991056] (hispanotech_map) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map'], 'cwd': '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'vboxuser'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1553'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/turtlebot3_ws/install/custom_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/proyecto_robotica'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1420'), ('ROS_LOG_DIR', '/home/vboxuser/my_logs'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:34782'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/vboxuser/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jjjj:@/tmp/.ICE-unix/1592,unix/jjjj:/tmp/.ICE-unix/1592'), ('INVOCATION_ID', '8bbbc7cb3c8346a8ac035c7ad887bf44'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9591da39_a35c_4aa0_8442_45ce4d39cdee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/hispanotech_map:/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/hispanotech:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/package_name:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/home/vboxuser/turtlebot3_ws/install/custom_interface:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/build/hispanotech_map'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/turtlebot3_ws/build/show_msg:/home/vboxuser/turtlebot3_ws/install/show_msg/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/my_first_service/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/build/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_publisher/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/build/my_first_action:/home/vboxuser/turtlebot3_ws/install/my_first_action/lib/python3.8/site-packages:/home/vboxuser/turtlebot3_ws/install/custom_interface/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/turtlebot3_ws/install/hispanotech_map:/home/vboxuser/turtlebot3_ws/install/turtlebot3_simulations:/home/vboxuser/turtlebot3_ws/install/my_world:/home/vboxuser/turtlebot3_ws/install/hispanotech:/home/vboxuser/turtlebot3_ws/install/turtlebot3_gazebo:/home/vboxuser/turtlebot3_ws/install/turtlebot3_fake_node:/home/vboxuser/turtlebot3_ws/install/package_name:/home/vboxuser/turtlebot3_ws/install/custom_interface:/home/vboxuser/turtlebot3_ws/install/show_msg:/home/vboxuser/turtlebot3_ws/install/my_first_service:/home/vboxuser/turtlebot3_ws/install/my_first_publisher:/home/vboxuser/turtlebot3_ws/install/my_first_action:/opt/ros/galactic')]), 'shell': False}
+[10.999822] (hispanotech_map) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.001002] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/lib/hispanotech_map/turtlebot3_drive\n'}
+[11.005437] (hispanotech_map) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/lib/hispanotech_map/turtlebot3_drive" to ""\n'}
+[11.005763] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//launch\n'}
+[11.005824] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//launch/turtlebot3_my_world.launch.py\n'}
+[11.008070] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models\n'}
+[11.008912] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1\n'}
+[11.009407] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/model.sdf\n'}
+[11.009972] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/model.config\n'}
+[11.010519] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes\n'}
+[11.011103] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/dummy.png\n'}
+[11.011522] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SCHUNK_logo.jpg\n'}
+[11.011865] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/warehouse_collision.stl\n'}
+[11.012466] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/EandM.jpg\n'}
+[11.013370] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/rock1.JPG\n'}
+[11.014107] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version4.dae\n'}
+[11.015186] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version1.dae\n'}
+[11.016103] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SICK_V2.png\n'}
+[11.016756] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/Logo-TheConstruct-primario-NEW-tagline-2.jpg\n'}
+[11.017436] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/SICK_V2_WHITE.jpg\n'}
+[11.018051] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version3.dae\n'}
+[11.019780] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_manipulation_challenge_logo.png\n'}
+[11.020431] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/FetchLogo-1024x388.png\n'}
+[11.020525] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/icra2019-poster-image.png\n'}
+[11.020580] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/Logo-SICK.jpg\n'}
+[11.020633] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/fetchit_env_version2.dae\n'}
+[11.020689] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//models/warehouse_1/meshes/box_labels.png\n'}
+[11.020742] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world\n'}
+[11.021552] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world/burger.model\n'}
+[11.022203] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//world/burger_pi.model\n'}
+[11.022669] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf\n'}
+[11.022978] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf/turtlebot3_burger.urdf\n'}
+[11.023398] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map//urdf/turtlebot3_burger_pi.urdf\n'}
+[11.023753] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/include/\n'}
+[11.024111] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/include//hispanotech_map\n'}
+[11.024346] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/ament_index/resource_index/package_run_dependencies/hispanotech_map\n'}
+[11.024810] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/ament_index/resource_index/parent_prefix_path/hispanotech_map\n'}
+[11.025003] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/ament_prefix_path.sh\n'}
+[11.025068] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/ament_prefix_path.dsv\n'}
+[11.025120] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/path.sh\n'}
+[11.025172] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/environment/path.dsv\n'}
+[11.025228] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.bash\n'}
+[11.025279] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.sh\n'}
+[11.025328] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.zsh\n'}
+[11.025382] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/local_setup.dsv\n'}
+[11.025430] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/package.dsv\n'}
+[11.025479] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/ament_index/resource_index/packages/hispanotech_map\n'}
+[11.025527] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.025575] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.025630] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/hispanotech_mapConfig.cmake\n'}
+[11.025679] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/cmake/hispanotech_mapConfig-version.cmake\n'}
+[11.027055] (hispanotech_map) StdoutLine: {'line': b'-- Installing: /home/vboxuser/proyecto_robotica/HispanoTech-UGC-ROS2/install/hispanotech_map/share/hispanotech_map/package.xml\n'}
+[11.027115] (hispanotech_map) CommandEnded: {'returncode': 0}
+[11.050377] (-) TimerEvent: {}
+[11.055714] (hispanotech_map) JobEnded: {'identifier': 'hispanotech_map', 'rc': 0}
+[11.056502] (-) EventReactorShutdown: {}

@@ -1,0 +1,8 @@
+source;share/hispanotech_map/hook/cmake_prefix_path.ps1
+source;share/hispanotech_map/hook/cmake_prefix_path.dsv
+source;share/hispanotech_map/hook/cmake_prefix_path.sh
+source;share/hispanotech_map/local_setup.bash
+source;share/hispanotech_map/local_setup.dsv
+source;share/hispanotech_map/local_setup.ps1
+source;share/hispanotech_map/local_setup.sh
+source;share/hispanotech_map/local_setup.zsh
