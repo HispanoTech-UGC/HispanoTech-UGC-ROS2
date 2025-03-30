@@ -1,0 +1,10 @@
+# Request definition (lo que pide el cliente)
+geometry_msgs/PoseStamped pose  # El objetivo de la navegación
+
+---
+# Result definition (lo que devuelve el servidor)
+bool success  # Si la navegación fue exitosa
+
+---
+# Feedback definition (retroalimentación del servidor mientras navega)
+float32 percentage_complete  # Progreso de la navegación en porcentaje
