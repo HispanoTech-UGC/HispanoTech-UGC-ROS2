@@ -1,7 +1,5 @@
 import os
 
-import launch.actions
-import launch_ros.actions
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -18,8 +16,8 @@ def generate_launch_description():
             name='map_server',
             output='screen',
             parameters=[{'use_sim_time': True}, 
-                        {'yaml_filename':map_file} 
-                       ]),
+                        {'yaml_filename': map_file}]
+        ),
 
         Node(
             package='rviz2',
@@ -28,7 +26,7 @@ def generate_launch_description():
             arguments=['-d', rviz_config_dir],
             parameters=[{'use_sim_time': True}],
             output='screen'
-            ),
+        ),
 
         Node(
             package='nav2_lifecycle_manager',
@@ -37,5 +35,14 @@ def generate_launch_description():
             output='screen',
             parameters=[{'use_sim_time': True},
                         {'autostart': True},
-                        {'node_names': ['map_server']}])            
-        ])
+                        {'node_names': ['map_server']}]
+        ),
+
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_tf_pub_map_to_odom',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+            output='screen'
+        )
+    ])
