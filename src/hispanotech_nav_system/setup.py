@@ -33,6 +33,7 @@ setup(
         'console_scripts': [
             'initial_pose_pub = hispanotech_nav_system.initial_pose_pub:main', #añadir
             'navigate_to_pose_client = hispanotech_nav_system.navigate_to_pose_client:main',
+            'path_main = hispanotech_nav_system.path_main:main',
         ],
     },
 )
