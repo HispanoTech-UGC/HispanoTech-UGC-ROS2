@@ -36,5 +36,22 @@ setup(
             'navigate_to_pose_client = hispanotech_nav_system.navigate_to_pose_client:main',
             'navigate_to_pose_server = hispanotech_nav_system.navigate_to_pose_server:main',                
             ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     },
 )
