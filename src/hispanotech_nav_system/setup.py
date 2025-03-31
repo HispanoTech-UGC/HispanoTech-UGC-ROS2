@@ -34,7 +34,7 @@ setup(
         'console_scripts': [
             'initial_pose_pub = hispanotech_nav_system.initial_pose_pub:main', #añadir
             'navigate_to_pose_client = hispanotech_nav_system.navigate_to_pose_client:main',
-            'navigate_to_pose_server = hispanotech_nav_system.navigate_to_pose_server:main',                
-            ],
+            'waypoint_recorder = hispanotech_nav_system.waypoint_recorder:main',
+        ],
     },
 )
