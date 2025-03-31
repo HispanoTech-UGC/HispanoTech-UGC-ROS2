@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root main_tree_to_execute="MainTree" id="Root">
+  <BehaviorTree ID="MainTree">
+    <Sequence name="NavigateSequence">
+      <!-- Replanificación -->
+      <Condition name="IsGoalUpdated">
+        <CheckStatus target="{goal_updated}" />
+      </Condition>
+
+      <!-- Navegar hacia la pose -->
+      <Action name="NavigateToPose">
+        <NavigateToPoseAction goal="{goal}" />
+      </Action>
+
+      <!-- Comprobar si el robot se ha quedado atascado -->
+      <Condition name="IsStuck">
+        <CheckStatus target="{is_stuck}" />
+      </Condition>
+
+      <!-- Acciones de recuperación -->
+      <Sequence name="RecoveryActions">
+        <Action name="Spin">
+          <SpinAction />
+        </Action>
+        <Action name="Backup">
+          <BackUpAction />
+        </Action>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+</root>
