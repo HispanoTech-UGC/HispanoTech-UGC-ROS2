@@ -6,10 +6,21 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
-
+    """
+    @brief Generate a launch description for the navigation stack.
+         
+    This function sets up the necessary nodes for robot navigation using Nav2,
+    including localization (AMCL), path planning, controllers, recovery behaviors,
+    RViz visualization, and map server functionalities.
+    
+    @return LaunchDescription The configured launch description for Nav2 and related nodes.
+    """
+    "@brief Path to the Nav2 configuration YAML file containing all navigation parameters."
     nav2_yaml = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'hispanotech_nav_params.yaml')
+    "@brief Path to the map YAML file specifying the robot's environment for navigation."
     map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'hispanotech_map.yaml')
-    #map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'turtlebot3_world.yaml')
+    #map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'turtlebot3_world.yaml')ç
+    "@brief Path to the RViz configuration file for visualizing navigation behavior."
     rviz_config_dir = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'rviz', 'rviz_hispano_slam.rviz')
    # urdf = os.path.join(get_package_share_directory('turtlebot3_description'), 'urdf', 'turtlebot3_burger.urdf')
    # world = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'worlds', 'turtlebot3_worlds/burger.model')

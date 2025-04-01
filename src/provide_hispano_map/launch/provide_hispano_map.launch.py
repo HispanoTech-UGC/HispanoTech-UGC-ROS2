@@ -5,9 +5,18 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
+    """
+    @brief Generate a launch description for running nodes in the navigation stack.
     
+    This function sets up and launches the nodes required for robot localization
+    and map visualization, including the map server, RViz, and a static transform publisher.
+    
+    @return LaunchDescription The launch description that defines the nodes and their parameters.
+    
+    """
+    "@brief Path to the RViz configuration file."
     rviz_config_dir = os.path.join(get_package_share_directory('provide_hispano_map'), 'rviz', 'rviz_hispano_slam.rviz')
-    map_file = os.path.join(get_package_share_directory('provide_hispano_map'), 'map', 'my_map.yaml')
+    map_file = os.path.join(get_package_share_directory('provide_hispano_map'), 'map', 'warehouse.yaml')
 
     return LaunchDescription([
         Node(

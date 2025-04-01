@@ -74,12 +74,13 @@ def main(args=None):
     executor = SingleThreadedExecutor()
     executor.add_node(client)
     try:
-        executor.spin()
+       rclpy.spin(client)
     except KeyboardInterrupt:
-        client.get_logger().info("🛑 Cliente interrumpido.")
+       client.get_logger().info("🛑 Cliente interrumpido.")
     finally:
-        client.destroy_node()
-        rclpy.shutdown()
+       client.destroy_node()
+       rclpy.shutdown()
+
 
 
 if __name__ == '__main__':
