@@ -7,7 +7,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     
     rviz_config_dir = os.path.join(get_package_share_directory('provide_hispano_map'), 'rviz', 'rviz_hispano_slam.rviz')
-    map_file = os.path.join(get_package_share_directory('provide_hispano_map'), 'map', 'my_map.yaml')
+    map_file = os.path.join(get_package_share_directory('provide_hispano_map'), 'map', 'warehouse.yaml')
 
     return LaunchDescription([
         Node(

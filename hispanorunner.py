@@ -62,7 +62,7 @@ lanzar_terminal([
 lanzar_terminal([
     "echo 'Terminal 4 - Cargar mapa'",
     "source ~/HispanoTech-UGC-ROS2/install/setup.bash",
-    'ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: $HOME//HispanoTech-UGC-ROS2/src/provide_hispano_map/map/my_map.yaml}"'
+    'ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: $HOME//HispanoTech-UGC-ROS2/src/provide_hispano_map/map/warehouse.yaml}"'
 ])
 
 input("🔁 Pulsa ENTER cuando se haya cargado el mapa para activar el map_server...")
