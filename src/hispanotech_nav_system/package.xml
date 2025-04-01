@@ -10,6 +10,7 @@
   <depend>rclpy</depend>
   <depend>nav_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>nav2_msgs</depend>
   <depend>provide_hispano_map</depend>
 
   <test_depend>ament_copyright</test_depend>
