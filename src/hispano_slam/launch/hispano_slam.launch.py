@@ -28,13 +28,13 @@ def generate_launch_description():
     """
     
     # Configuración de tiempo de simulación (Gazebo)
-    use_sim_time = LaunchConfiguration('use_sim_time', default='false')
+    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
 
     return LaunchDescription([
         # Argumento para tiempo de simulación
         DeclareLaunchArgument(
             'use_sim_time',
-            default_value='false',
+            default_value='true',
             description='Usar reloj de simulación (Gazebo) si es true'
         ),
 
