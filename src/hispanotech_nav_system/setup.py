@@ -16,7 +16,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'config'), glob('config/*.pgm')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
-        (os.path.join('share', package_name, 'config'), glob('config/*.rviz')),
+        (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'config'), glob('config/*.lua')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
@@ -36,22 +36,5 @@ setup(
             'navigate_to_pose_client = hispanotech_nav_system.navigate_to_pose_client:main',
             'navigate_to_pose_server = hispanotech_nav_system.navigate_to_pose_server:main',                
             ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     },
 )
