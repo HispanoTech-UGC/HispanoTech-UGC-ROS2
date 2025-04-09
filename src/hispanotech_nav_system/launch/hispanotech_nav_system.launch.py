@@ -82,6 +82,13 @@ def generate_launch_description():
                         {'node_names':['map_server', 'amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator']}]
         ),
 
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_tf_pub_map_to_odom',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+            output='screen'
+        ),
          Node(
                package='rviz2',
                executable='rviz2',
