@@ -38,6 +38,15 @@ amcl:
     z_rand: 0.5
     z_short: 0.05
     scan_topic: scan
+    initial_pose:
+      x: 0.0
+      y: -16.0
+      z: 0.0
+      roll: 0.0
+      pitch: 0.0
+      yaw: 0.0
+
+
 
 amcl_map_client:
   ros__parameters:
