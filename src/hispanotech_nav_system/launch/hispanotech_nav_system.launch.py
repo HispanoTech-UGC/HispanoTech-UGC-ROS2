@@ -24,6 +24,8 @@ def generate_launch_description():
     rviz_config_dir = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'rviz', 'rviz_hispano_slam.rviz')
    # urdf = os.path.join(get_package_share_directory('turtlebot3_description'), 'urdf', 'turtlebot3_burger.urdf')
    # world = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'worlds', 'turtlebot3_worlds/burger.model')
+    pkg_dir = get_package_share_directory('hispanotech_nav_system')
+    config_dir = os.path.join(pkg_dir, 'config')
 
     return LaunchDescription([
         Node(
@@ -31,7 +33,7 @@ def generate_launch_description():
             executable = 'map_server',
             name = 'map_server',
             output = 'screen',
-            parameters=[{'use_sim_time': True}, {'yaml_filename':map_file}]
+            parameters=[{'yaml_filename':os.path.join(config_dir, 'hispanotech_map.yaml')}]
         ),
 
         Node(
@@ -77,12 +79,40 @@ def generate_launch_description():
             executable='lifecycle_manager',
             name='lifecycle_manager_pathplanner',
             output='screen',
-            parameters=[{'use_sim_time': True},
-                        {'autostart': True},
-                        {'node_names':['map_server', 'amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator']}]
+            parameters=[{'autostart': True},
+                        {'node_names':['amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator']}]
         ),
 
-         Node(
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_tf_pub_map_to_odom',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+            output='screen'
+        ),
+        #TRANSFORMADAS CÁMARA
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_tf_pub_camera_link',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'camera_link'],
+            output='screen'
+        ),
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_tf_pub_camera_frame',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'camera_rgb_frame'],
+            output='screen'
+        ),
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_tf_pub_camera_optical_frame',
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'camera_rgb_optical_frame'],
+            output='screen'
+        ),
+        Node(
                package='rviz2',
                executable='rviz2',
                name='rviz2',
