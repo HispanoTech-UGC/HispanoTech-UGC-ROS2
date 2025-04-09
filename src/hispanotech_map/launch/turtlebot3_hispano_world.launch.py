@@ -29,7 +29,7 @@ def generate_launch_description():
     """
     
     # Rutas de archivos configurables
-    world_file_name = 'world/' + TURTLEBOT3_MODEL + '.model'  # Mundo específico por modelo
+    world_file_name = 'world/' + TURTLEBOT3_MODEL + '_office.world'  # Mundo específico por modelo
     urdf_file_name = 'urdf/turtlebot3_' + TURTLEBOT3_MODEL + '.urdf'  # Modelo URDF del robot
     
     # Configuración de paths para recursos HispanoTech
