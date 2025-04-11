@@ -30,7 +30,7 @@ def generate_launch_description():
     
     # Rutas de archivos configurables
     world_file_name = 'world/' + TURTLEBOT3_MODEL + '_office.world'  # Mundo específico por modelo
-    urdf_file_name = 'urdf/turtlebot3_' + TURTLEBOT3_MODEL + '.urdf'  # Modelo URDF del robot
+    urdf_file_name = 'urdf/turtlebot3_' + TURTLEBOT3_MODEL + '_pi.urdf'  # Modelo URDF del robot
     
     # Configuración de paths para recursos HispanoTech
     pkg_share = FindPackageShare(package='hispanotech_map').find('hispanotech_map')

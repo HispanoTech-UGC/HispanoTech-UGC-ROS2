@@ -39,14 +39,14 @@ lanzar_terminal([
 
 input("🔁 Espera a que el mundo cargue completamente y pulsa ENTER...")
 
-# Terminal 2: Lanzar el nodo del mapa
+# Terminal 2: Lanzar el sistema de navegación
 lanzar_terminal([
-    "echo 'Terminal 2 - Mapa'",
+    "echo 'Terminal 2 - Sistema de Navegación'",
     "source ~/HispanoTech-UGC-ROS2/install/setup.bash",
-    "ros2 launch provide_hispano_map provide_hispano_map.launch.py"
+    "ros2 launch hispanotech_nav_system hispanotech_nav_system.launch.py"
 ])
 
-input("🔁 Espera a que el nodo del mapa esté lanzado y pulsa ENTER...")
+input("🔁 Espera a que el sistema de navegación esté lanzado y pulsa ENTER...")
 
 # Terminal 3: Teleoperación
 lanzar_terminal([
@@ -59,12 +59,12 @@ lanzar_terminal([
 # Esto es para más adelante, después del siguiente paso
 
 # Terminal 4: Llamada al servicio de cargar mapa
-lanzar_terminal([
+""" lanzar_terminal([
     "echo 'Terminal 4 - Cargar mapa'",
     "source ~/HispanoTech-UGC-ROS2/install/setup.bash",
-    'ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: $HOME//HispanoTech-UGC-ROS2/src/hispanotech_nav_system/config/hispanotech_map.yaml}"'
+    'ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: $HOME/HispanoTech-UGC-ROS2/src/hispanotech_nav_system/config/hispanotech_map.yaml}"'
 ])
-
+ """
 input("🔁 Pulsa ENTER cuando se haya cargado el mapa para activar el map_server...")
 # Terminal 5: Activar map_server si no lo está ya
 print("🔍 Comprobando si map_server ya está activo...")

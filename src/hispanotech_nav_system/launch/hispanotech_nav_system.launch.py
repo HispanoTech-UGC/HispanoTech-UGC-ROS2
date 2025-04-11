@@ -19,7 +19,7 @@ def generate_launch_description():
     nav2_yaml = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'hispanotech_nav_params.yaml')
     "@brief Path to the map YAML file specifying the robot's environment for navigation."
     map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'hispanotech_map.yaml')
-    #map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'turtlebot3_world.yaml')ç
+    #map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'turtlebot3_world.yaml')
     "@brief Path to the RViz configuration file for visualizing navigation behavior."
     rviz_config_dir = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'rviz', 'rviz_hispano_slam.rviz')
    # urdf = os.path.join(get_package_share_directory('turtlebot3_description'), 'urdf', 'turtlebot3_burger.urdf')
@@ -28,6 +28,14 @@ def generate_launch_description():
     config_dir = os.path.join(pkg_dir, 'config')
 
     return LaunchDescription([
+        Node(
+            package='nav2_waypoint_follower',
+            executable='waypoint_follower',
+            name='waypoint_follower',
+            output='screen',
+            parameters=[nav2_yaml, {'use_sim_time': True}]
+        ),
+        
         Node(
             package = 'nav2_map_server',
             executable = 'map_server',
@@ -80,7 +88,7 @@ def generate_launch_description():
             name='lifecycle_manager_pathplanner',
             output='screen',
             parameters=[{'autostart': True},
-                        {'node_names':['amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator']}]
+                        {'node_names':['amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator', 'map_server', 'waypoint_follower']}]
         ),
 
         Node(
