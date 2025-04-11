@@ -28,14 +28,15 @@ class WaypointFollowerClient(Node):
 
     def define_waypoints(self):
         """
-        Define la ruta cerrada con 5 puntos específicos (cuadrado).
+        Define la ruta cerrada.
         """
         coords = [
-            (1.0, 1.0),
-            (2.0, 1.0),
-            (2.0, 2.0),
-            (1.0, 2.0),
-            (1.0, 1.0)  # Último punto donde se detendrá
+            (0.0, 19.6),
+            (-5.5, 17.8),
+            (-5.4, 3.2),
+            (6.1, 4.2),
+            (5.7, 17.7),
+            (0.0, 19.6)
         ]
 
         waypoints = []
