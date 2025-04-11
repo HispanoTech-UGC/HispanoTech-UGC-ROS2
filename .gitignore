@@ -1,5 +1,6 @@
 devel/
 logs/
+log/latest_build
 log/
 build/
 install/

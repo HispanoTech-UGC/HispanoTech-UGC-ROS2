@@ -16,8 +16,7 @@ def generate_launch_description():
     """
     "@brief Path to the RViz configuration file."
     rviz_config_dir = os.path.join(get_package_share_directory('provide_hispano_map'), 'rviz', 'rviz_hispano_slam.rviz')
-    "@brief Path to the YAML file containing the map configuration."
-    map_file = os.path.join(get_package_share_directory('provide_hispano_map'), 'map', 'my_map.yaml')
+    map_file = os.path.join(get_package_share_directory('provide_hispano_map'), 'map', 'warehouse.yaml')
 
     return LaunchDescription([
         Node(

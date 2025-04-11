@@ -23,29 +23,19 @@ setup(
         # Estructura estándar de paquetes ROS 2
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        
-        # Recursos específicos del proyecto
-        ## Mapas base (formato PGM+YAML)
-        (os.path.join('share', package_name, 'map'), glob('map/*.pgm')),
-        (os.path.join('share', package_name, 'map'), glob('map/*.yaml')),
-        
-        ## Configuraciones de visualización RViz
-        (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
-        
-        ## Archivos de lanzamiento
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
-        
-        ## Configuraciones Cartographer (.lua)
-        (os.path.join('share', package_name, 'config'), glob('config/*.lua')),
+        (os.path.join('share', package_name, 'map'), glob('map/*.pgm')),#incluir
+        (os.path.join('share', package_name, 'map'), glob('map/*.yaml')),#incluir
+        (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),#incluir
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),#incluir
+        (os.path.join('share', package_name, 'config'), glob('config/*.lua')),#incluir
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    
-    # Metadatos del paquete
-    maintainer='Equipo HispanoTech',
-    maintainer_email='smariba@epsg.upv.es',
-    description='Sistema de SLAM para robots industriales HispanoTech',
-    license='Apache License 2.0',
+    maintainer='asperez@upv.es',
+    maintainer_email='asperez@upv.es',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
