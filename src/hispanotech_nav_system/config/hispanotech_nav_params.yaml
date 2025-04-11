@@ -39,8 +39,8 @@ amcl:
     z_short: 0.05
     scan_topic: scan
     initial_pose:
-      x: 0.0
-      y: -16.0
+      x: 23.6068
+      y: 42.9335
       z: 0.0
       roll: 0.0
       pitch: 0.0
@@ -62,7 +62,7 @@ bt_navigator:
     global_frame: map
     robot_base_frame: base_link
     odom_topic: /odom
-    default_nav_to_pose_bt_xml: "navigate_w_replanning_and_recovery.xml"
+    #default_nav_to_pose_bt_xml: "navigate_w_replanning_and_recovery.xml"
     plugin_lib_names:
     - nav2_compute_path_to_pose_action_bt_node
     - nav2_compute_path_through_poses_action_bt_node

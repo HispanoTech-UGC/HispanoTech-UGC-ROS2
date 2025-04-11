@@ -14,7 +14,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'config'), glob('config/*.pgm')),
+        (os.path.join('share', package_name, 'config'), glob('config/*.png')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
         (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
@@ -33,8 +33,7 @@ setup(
     entry_points={
         'console_scripts': [
             'initial_pose_pub = hispanotech_nav_system.initial_pose_pub:main', #añadir
-            'navigate_to_pose_client = hispanotech_nav_system.navigate_to_pose_client:main',
-            'navigate_to_pose_server = hispanotech_nav_system.navigate_to_pose_server:main',                
+            'nav_to_pose = hispanotech_nav_system.nav_to_pose:main',           
             ],
     },
 )
