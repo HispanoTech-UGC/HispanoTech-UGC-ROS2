@@ -29,6 +29,14 @@ def generate_launch_description():
 
     return LaunchDescription([
         Node(
+            package='nav2_waypoint_follower',
+            executable='waypoint_follower',
+            name='waypoint_follower',
+            output='screen',
+            parameters=[nav2_yaml, {'use_sim_time': True}]
+        ),
+        
+        Node(
             package = 'nav2_map_server',
             executable = 'map_server',
             name = 'map_server',
@@ -80,7 +88,7 @@ def generate_launch_description():
             name='lifecycle_manager_pathplanner',
             output='screen',
             parameters=[{'autostart': True},
-                        {'node_names':['amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator']}]
+                        {'node_names':['amcl', 'planner_server', 'controller_server', 'recoveries_server', 'bt_navigator', 'map_server', 'waypoint_follower']}]
         ),
 
         Node(
