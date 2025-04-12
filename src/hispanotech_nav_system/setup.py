@@ -34,7 +34,8 @@ setup(
         'console_scripts': [
             'initial_pose_pub = hispanotech_nav_system.initial_pose_pub:main', #añadir
             'nav_to_pose = hispanotech_nav_system.nav_to_pose:main',  
-            'waypoint_follower = hispanotech_nav_system.waypoint_follower:main'         
+            'waypoint_follower = hispanotech_nav_system.waypoint_follower:main',
+            'route_recorder = hispanotech_nav_system.route_recorder:main',       
             ],
     },
 )

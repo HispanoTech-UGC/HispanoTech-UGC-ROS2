@@ -7,15 +7,16 @@ from nav2_msgs.action import FollowWaypoints
 from rclpy.action import ActionClient
 
 from geometry_msgs.msg import PoseStamped
-from builtin_interfaces.msg import Time
-
-import time
-
+import os
 
 class WaypointFollowerClient(Node):
 
     def __init__(self):
         super().__init__('waypoint_follower_client')
+
+        # Declarar parámetro para path del archivo
+        self.declare_parameter('ruta_waypoints', '/home/javier/HispanoTech-UGC-ROS2/src/hispanotech_nav_system/save_paths/ruta_guardada.txt')
+        self.ruta_archivo = self.get_parameter('ruta_waypoints').get_parameter_value().string_value
 
         self._action_client = ActionClient(self, FollowWaypoints, 'follow_waypoints')
 
@@ -28,34 +29,37 @@ class WaypointFollowerClient(Node):
 
     def define_waypoints(self):
         """
-        Define la ruta cerrada con 5 puntos específicos (cuadrado).
+        Carga waypoints desde un archivo de texto con coordenadas X,Y por línea.
         """
-        coords = [
-            (1.0, 1.0),
-            (2.0, 1.0),
-            (2.0, 2.0),
-            (1.0, 2.0),
-            (1.0, 1.0)  # Último punto donde se detendrá
-        ]
-
         waypoints = []
 
-        for x, y in coords:
-            pose = PoseStamped()
-            pose.header.frame_id = "map"
-            pose.header.stamp = self.get_clock().now().to_msg()
+        if not os.path.exists(self.ruta_archivo):
+            self.get_logger().error(f"Archivo no encontrado: {self.ruta_archivo}")
+            return waypoints
 
-            pose.pose.position.x = x
-            pose.pose.position.y = y
-            pose.pose.position.z = 0.0
+        try:
+            with open(self.ruta_archivo, 'r') as f:
+                for line in f:
+                    x_str, y_str = line.strip().split(',')
+                    x = float(x_str)
+                    y = float(y_str)
 
-            # Orientación sin rotación (mirando hacia adelante)
-            pose.pose.orientation.w = 1.0
+                    pose = PoseStamped()
+                    pose.header.frame_id = "map"
+                    pose.header.stamp = self.get_clock().now().to_msg()
 
-            waypoints.append(pose)
+                    pose.pose.position.x = x
+                    pose.pose.position.y = y
+                    pose.pose.position.z = 0.0
+                    pose.pose.orientation.w = 1.0  # orientación sin rotación
+
+                    waypoints.append(pose)
+
+            self.get_logger().info(f'{len(waypoints)} waypoints cargados desde archivo.')
+        except Exception as e:
+            self.get_logger().error(f"Error leyendo waypoints: {e}")
 
         return waypoints
-
 
     def send_waypoints(self):
         """
@@ -63,6 +67,10 @@ class WaypointFollowerClient(Node):
         """
         goal_msg = FollowWaypoints.Goal()
         goal_msg.poses = self.define_waypoints()
+
+        if not goal_msg.poses:
+            self.get_logger().warn('No se enviaron waypoints porque la lista está vacía.')
+            return
 
         self.get_logger().info(f'Enviando {len(goal_msg.poses)} waypoints...')
         self._send_goal_future = self._action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
