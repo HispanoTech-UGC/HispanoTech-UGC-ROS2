@@ -33,7 +33,7 @@ def generate_launch_description():
             executable='waypoint_follower',
             name='waypoint_follower',
             output='screen',
-            parameters=[nav2_yaml, {'use_sim_time': True}]
+            parameters=[nav2_yaml, {'use_sim_time': True}, {'ruta_waypoints': os.path.join(config_dir, 'ruta_guardada.txt')}]
         ),
         
         Node(
@@ -82,6 +82,13 @@ def generate_launch_description():
             output='screen',
             parameters=[nav2_yaml, {'use_sim_time': True}]
         ),
+        Node(
+            package='hispanotech_nav_system',
+            executable='route_recorder',
+            name='route_recorder',
+            output='screen',
+            parameters=[{'use_sim_time': True}]
+        ),       
         Node(
             package='nav2_lifecycle_manager',
             executable='lifecycle_manager',
