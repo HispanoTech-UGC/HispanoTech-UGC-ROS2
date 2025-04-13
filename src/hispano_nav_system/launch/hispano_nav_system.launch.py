@@ -16,15 +16,15 @@ def generate_launch_description():
     @return LaunchDescription The configured launch description for Nav2 and related nodes.
     """
     "@brief Path to the Nav2 configuration YAML file containing all navigation parameters."
-    nav2_yaml = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'hispanotech_nav_params.yaml')
+    nav2_yaml = os.path.join(get_package_share_directory('hispano_nav_system'), 'config', 'hispano_nav_params.yaml')
     "@brief Path to the map YAML file specifying the robot's environment for navigation."
-    map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'hispanotech_map.yaml')
-    #map_file = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'config', 'turtlebot3_world.yaml')
+    map_file = os.path.join(get_package_share_directory('hispano_nav_system'), 'config', 'hispano_map.yaml')
+    #map_file = os.path.join(get_package_share_directory('hispano_nav_system'), 'config', 'turtlebot3_world.yaml')
     "@brief Path to the RViz configuration file for visualizing navigation behavior."
-    rviz_config_dir = os.path.join(get_package_share_directory('hispanotech_nav_system'), 'rviz', 'rviz_hispano_slam.rviz')
+    rviz_config_dir = os.path.join(get_package_share_directory('hispano_nav_system'), 'rviz', 'rviz_hispano_slam.rviz')
    # urdf = os.path.join(get_package_share_directory('turtlebot3_description'), 'urdf', 'turtlebot3_burger.urdf')
    # world = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'worlds', 'turtlebot3_worlds/burger.model')
-    pkg_dir = get_package_share_directory('hispanotech_nav_system')
+    pkg_dir = get_package_share_directory('hispano_nav_system')
     config_dir = os.path.join(pkg_dir, 'config')
 
     return LaunchDescription([
@@ -41,7 +41,7 @@ def generate_launch_description():
             executable = 'map_server',
             name = 'map_server',
             output = 'screen',
-            parameters=[{'yaml_filename':os.path.join(config_dir, 'hispanotech_map.yaml')}]
+            parameters=[{'yaml_filename':os.path.join(config_dir, 'hispano_map.yaml')}]
         ),
 
         Node(
@@ -83,7 +83,7 @@ def generate_launch_description():
             parameters=[nav2_yaml, {'use_sim_time': True}]
         ),
         Node(
-            package='hispanotech_nav_system',
+            package='hispano_nav_system',
             executable='route_recorder',
             name='route_recorder',
             output='screen',

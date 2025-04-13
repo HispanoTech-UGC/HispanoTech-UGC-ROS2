@@ -1,8 +1,8 @@
 colcon build
 
-source ~/HispanoTech-UGC-ROS2/install/setup.bash
-ros2 launch hispanotech_map turtlebot3_my_world.launch.py
+source ~/Hispano-UGC-ROS2/install/setup.bash
+ros2 launch hispano_map turtlebot3_my_world.launch.py
 ros2 launch provide_hispano_map provide_hispano_map.launch.py
 ros2 run turtlebot3_teleop teleop_keyboard
 
-ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: $HOME//HispanoTech-UGC-ROS2/src/provide_hispano_map/map/my_map.yaml}"
+ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: $HOME//Hispano-UGC-ROS2/src/provide_hispano_map/map/my_map.yaml}"

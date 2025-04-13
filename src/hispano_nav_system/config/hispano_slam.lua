@@ -1,4 +1,4 @@
---- @file HispanoTech_slam.lua
+--- @file Hispano_slam.lua
 --- @brief Configuración de SLAM 2D para HispanoTech usando Cartographer
 --- Este archivo contiene la configuración personalizada para el sistema de mapeo y localización
 --- de HispanoTech. Configura parámetros clave para:
@@ -71,5 +71,5 @@ POSE_GRAPH.constraint_builder.global_localization_min_score = 0.7  -- 70% para r
 
 -- POSE_GRAPH.optimize_every_n_nodes = 0  -- Optimización continua desactivada
 
---- @return table Configuración completa del sistema SLAM HispanoTech
+--- @return table Configuración completa del sistema SLAM Hispano
 return options
