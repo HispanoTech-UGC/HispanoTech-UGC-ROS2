@@ -4,12 +4,12 @@ from setuptools import setup
 from setuptools import setup, find_packages
 
 
-package_name = 'hispanotech_nav_system'
+package_name = 'hispano_nav_system'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(include=['hispanotech_nav_system', 'hispanotech_nav_system.*']),
+    packages=find_packages(include=['hispano_nav_system', 'hispano_nav_system.*']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -32,10 +32,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'initial_pose_pub = hispanotech_nav_system.initial_pose_pub:main', #añadir
-            'nav_to_pose = hispanotech_nav_system.nav_to_pose:main',  
-            'waypoint_follower = hispanotech_nav_system.waypoint_follower:main',
-            'route_recorder = hispanotech_nav_system.route_recorder:main',       
+            'initial_pose_pub = hispano_nav_system.initial_pose_pub:main', #añadir
+            'nav_to_pose = hispano_nav_system.nav_to_pose:main',  
+            'waypoint_follower = hispano_nav_system.waypoint_follower:main',
+            'route_recorder = hispano_nav_system.route_recorder:main',       
             ],
     },
 )

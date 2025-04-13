@@ -14,7 +14,7 @@ class RouteRecorder(Node):
         super().__init__('route_recorder')
 
         # Parámetro para path del archivo
-        self.declare_parameter('ruta_salida', '/home/javier/HispanoTech-UGC-ROS2/src/hispanotech_nav_system/save_paths/ruta_guardada.txt')
+        self.declare_parameter('ruta_salida', './src/hispano_nav_system/save_paths/ruta_guardada.txt')
         self.output_path = self.get_parameter('ruta_salida').get_parameter_value().string_value
 
         # Limpiar archivo si existe (sobrescribir)

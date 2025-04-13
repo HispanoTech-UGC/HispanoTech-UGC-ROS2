@@ -19,7 +19,7 @@ class WaypointFollowerClient(Node):
         super().__init__('waypoint_follower_client')
 
         # Declarar parámetro para path del archivo
-        self.declare_parameter('ruta_waypoints', '/home/javier/HispanoTech-UGC-ROS2/src/hispanotech_nav_system/save_paths/ruta_guardada.txt')
+        self.declare_parameter('ruta_waypoints', './src/hispano_nav_system/save_paths/ruta_guardada.txt')
         self.ruta_archivo = self.get_parameter('ruta_waypoints').get_parameter_value().string_value
 
         ## Cliente de acción para enviar la secuencia de waypoints
