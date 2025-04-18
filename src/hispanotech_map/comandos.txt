@@ -1,9 +1,0 @@
-cd HispanoTech-UGC-ROS2
-source ~/HispanoTech-UGC-ROS2/install/setup.bash
-colcon build --packages-select hispanotech_map
-source install/setup.bash
-
-ros2 launch hispanotech_map turtlebot3_hispano_world.launch.py
-
-// moviento maual WASDX
-ros2 run turtlebot3_teleop teleop_keyboard
