@@ -33,7 +33,7 @@ def generate_launch_description():
     urdf_file_name = 'urdf/turtlebot3_' + TURTLEBOT3_MODEL + '_pi.urdf'  # Modelo URDF del robot
     
     # Configuración de paths para recursos HispanoTech
-    pkg_share = FindPackageShare(package='hispanotech_map').find('hispanotech_map')
+    pkg_share = FindPackageShare(package='hispano_map').find('hispano_map')
     gazebo_models_path = os.path.join(pkg_share, 'models')
     os.environ["GAZEBO_MODEL_PATH"] = gazebo_models_path  # Ruta para modelos personalizados
     
