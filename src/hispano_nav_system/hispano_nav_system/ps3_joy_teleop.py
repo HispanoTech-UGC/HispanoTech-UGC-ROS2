@@ -18,8 +18,19 @@ class JoyVelocityPublisher(Node):
         self.robot_vel = self.create_publisher(Twist, '/cmd_vel', qos_profile)
 
         self.get_logger().info(f"{self.get_name()} started")
+        self.get_logger().info("🎮 JoyDebugger activo — mueve sticks o pulsa botones para ver el mapping")
 
     def joy_callback(self, msg):
+        # Mostrar ejes
+        for i, axis in enumerate(msg.axes):
+            if abs(axis) > 0.1:  # Ignora valores pequeños por ruido
+                self.get_logger().info(f"🌀 Eje [{i}] → valor: {axis:.2f}")
+
+        # Mostrar botones
+        for i, btn in enumerate(msg.buttons):
+            if btn:
+                self.get_logger().info(f"🔘 Botón [{i}] pulsado")
+
         # Eje R2 analógico — comúnmente en axes[5] (ajusta si es otro)
         r2_axis_raw = msg.axes[5]  # 1.0 (no pulsado) → -1.0 (pulsado)
         r2_pressure = max(0.0, (1.0 - r2_axis_raw) / 2.0)  # Normaliza a 0.0 → 1.0 y asegura no valores negativos
