@@ -1,6 +1,9 @@
 devel/
 logs/
+log/latest_build
+log/
 build/
+install/
 bin/
 lib/
 msg_gen/
