@@ -49,7 +49,7 @@ def generate_launch_description():
             executable='amcl',
             name='amcl',
             output='screen',
-            parameters=[nav2_yaml]
+            parameters=[nav2_yaml, {'use_sim_time': True}]
         ),
 
 
@@ -58,7 +58,7 @@ def generate_launch_description():
             executable = 'planner_server',
             name = 'planner_server',
             output = 'screen',
-            parameters=[nav2_yaml]
+            parameters=[nav2_yaml, {'use_sim_time': True}]
         ),
 
         Node(
