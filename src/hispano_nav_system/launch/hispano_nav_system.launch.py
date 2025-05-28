@@ -26,6 +26,7 @@ def generate_launch_description():
    # world = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'worlds', 'turtlebot3_worlds/burger.model')
     pkg_dir = get_package_share_directory('hispano_nav_system')
     config_dir = os.path.join(pkg_dir, 'config')
+    ruta_txt = os.path.join(config_dir, 'ruta_guardada.txt')
 
     return LaunchDescription([
         Node(
@@ -49,7 +50,18 @@ def generate_launch_description():
             executable='amcl',
             name='amcl',
             output='screen',
-            parameters=[nav2_yaml]
+            parameters=[nav2_yaml, {'use_sim_time': True}]
+        ),
+        
+         Node(
+            package='hispano_nav_system',
+            executable='route_follower',  
+            name='route_follower',
+            output='screen',
+            parameters=[
+                {'use_sim_time': True},
+                {'ruta_archivo': ruta_txt} 
+            ]
         ),
 
 
@@ -58,7 +70,7 @@ def generate_launch_description():
             executable = 'planner_server',
             name = 'planner_server',
             output = 'screen',
-            parameters=[nav2_yaml]
+            parameters=[nav2_yaml, {'use_sim_time': True}]
         ),
 
         Node(
@@ -86,6 +98,21 @@ def generate_launch_description():
             package='hispano_nav_system',
             executable='route_recorder',
             name='route_recorder',
+            output='screen',
+            parameters=[{'use_sim_time': True}]
+        ),
+        Node(
+            package='joy',
+            executable='joy_node',
+            name='joy_node',
+            output='screen',
+            parameters=[{'use_sim_time': True}]
+        ),
+
+        Node(
+            package='hispano_nav_system',
+            executable='ps3_joy_teleop',
+            name='ps3_joy_teleop',
             output='screen',
             parameters=[{'use_sim_time': True}]
         ),       
