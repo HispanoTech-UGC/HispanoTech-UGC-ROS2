@@ -88,6 +88,21 @@ def generate_launch_description():
             name='route_recorder',
             output='screen',
             parameters=[{'use_sim_time': True}]
+        ),
+        Node(
+            package='joy',
+            executable='joy_node',
+            name='joy_node',
+            output='screen',
+            parameters=[{'use_sim_time': True}]
+        ),
+
+        Node(
+            package='hispano_nav_system',
+            executable='ps3_joy_teleop',
+            name='ps3_joy_teleop',
+            output='screen',
+            parameters=[{'use_sim_time': True}]
         ),       
         Node(
             package='nav2_lifecycle_manager',
