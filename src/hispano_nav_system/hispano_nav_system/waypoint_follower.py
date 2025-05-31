@@ -8,6 +8,8 @@ from rclpy.action import ActionClient
 
 from geometry_msgs.msg import PoseStamped
 import os
+from tf_transformations import quaternion_from_euler
+
 
 ## @class WaypointFollowerClient
 #  @brief Nodo ROS2 que carga una ruta de waypoints desde un archivo y la envía a un servidor de acción para que el robot la siga.
@@ -47,9 +49,19 @@ class WaypointFollowerClient(Node):
         try:
             with open(self.ruta_archivo, 'r') as f:
                 for line in f:
-                    x_str, y_str = line.strip().split(',')
+                    values = line.strip().split(',')
+
+                    if len(values) != 3:
+                        self.get_logger().warn(f"Línea ignorada (esperado 3 valores): {line.strip()}")
+                        continue
+
+                    x_str, y_str, yaw_str = values
                     x = float(x_str)
                     y = float(y_str)
+                    yaw = float(yaw_str)
+
+                    # Convertir yaw a cuaternión
+                    q = quaternion_from_euler(0, 0, yaw)
 
                     pose = PoseStamped()
                     pose.header.frame_id = "map"
@@ -58,9 +70,14 @@ class WaypointFollowerClient(Node):
                     pose.pose.position.x = x
                     pose.pose.position.y = y
                     pose.pose.position.z = 0.0
-                    pose.pose.orientation.w = 1.0  # orientación sin rotación
+
+                    pose.pose.orientation.x = q[0]
+                    pose.pose.orientation.y = q[1]
+                    pose.pose.orientation.z = q[2]
+                    pose.pose.orientation.w = q[3]
 
                     waypoints.append(pose)
+
 
             self.get_logger().info(f'{len(waypoints)} waypoints cargados desde archivo.')
         except Exception as e:

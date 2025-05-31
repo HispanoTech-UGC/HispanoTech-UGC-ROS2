@@ -3,77 +3,103 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseWithCovarianceStamped
+from nav_msgs.msg import Odometry
 import os
+from tf_transformations import euler_from_quaternion
 
-## @class RouteRecorder
-#  @brief Nodo ROS2 que graba coordenadas del robot mientras se mueve, utilizando el tópico /amcl_pose.
+
 class RouteRecorder(Node):
-    ## @brief Constructor de la clase RouteRecorder.
-    #  Declara parámetros, inicializa suscripciones y prepara el archivo de salida para guardar rutas.
     def __init__(self):
         super().__init__('route_recorder')
 
-        # Parámetro para path del archivo
         self.declare_parameter('ruta_salida', './src/hispano_nav_system/save_paths/ruta_guardada.txt')
         self.output_path = self.get_parameter('ruta_salida').get_parameter_value().string_value
 
-        # Limpiar archivo si existe (sobrescribir)
+        # Limpiar archivo
         try:
             with open(self.output_path, 'w') as f:
-                f.write('')  # vacía el archivo
+                f.write('')
             self.get_logger().info(f'Archivo sobrescrito: {self.output_path}')
         except Exception as e:
             self.get_logger().error(f'Error al limpiar el archivo: {e}')
 
-        ## Suscripción al tópico /amcl_pose para recibir la pose estimada del robot
-        self.subscription = self.create_subscription(
+        # Publicador en /initialpose
+        self.initialpose_pub = self.create_publisher(PoseWithCovarianceStamped, '/initialpose', 10)
+
+        # Suscriptor temporal a /odom para inicializar pose automáticamente
+        self.odom_subscriber = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
+
+        # Suscriptor real para grabar ruta
+        self.pose_subscriber = self.create_subscription(
             PoseWithCovarianceStamped,
             '/amcl_pose',
             self.pose_callback,
             10
         )
 
-        ## Última pose registrada
+        self.first_pose_saved = False
         self.last_pose = None
-        ## Umbral mínimo de distancia para registrar una nueva pose
         self.threshold = 0.2
-        ## Lista de coordenadas guardadas
         self.saved_coords = []
+        self.initialized = False  # Marcador para no reusar la posición inicial más de una vez
 
         self.get_logger().info(f'Grabando coordenadas en: {self.output_path}')
-        self.get_logger().info('Mueve el robot con teleop y se irán guardando automáticamente.')
+        self.get_logger().info('Esperando posición inicial para AMCL...')
 
-    ## @brief Callback que se ejecuta al recibir un nuevo mensaje de pose.
-    #  @param msg Mensaje recibido del tipo PoseWithCovarianceStamped.
+    def odom_callback(self, msg):
+        if self.initialized:
+            return
+
+        pose_msg = PoseWithCovarianceStamped()
+        pose_msg.header.stamp = self.get_clock().now().to_msg()
+        pose_msg.header.frame_id = 'map'  # AMCL espera "map" como frame de referencia
+
+        pose_msg.pose.pose = msg.pose.pose  # Copia la pose actual desde odom
+
+        # Opcional: ajustar covarianza para AMCL si es necesario
+        pose_msg.pose.covariance = [
+            0.25, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.25, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.06853891945200942
+        ]
+
+
+        self.initialpose_pub.publish(pose_msg)
+        self.initialized = True
+        self.get_logger().info('Posición inicial enviada automáticamente a AMCL.')
+        self.destroy_subscription(self.odom_subscriber)
+
     def pose_callback(self, msg):
         x = msg.pose.pose.position.x
         y = msg.pose.pose.position.y
+        orientation_q = msg.pose.pose.orientation
+        quat = [orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w]
+        (_, _, yaw) = euler_from_quaternion(quat)
 
-        if self.last_pose is None:
-            self.save_pose(x, y)
+        if not self.first_pose_saved:
+            self.save_pose(x, y, yaw)
+            self.first_pose_saved = True
             return
 
-        last_x, last_y = self.last_pose
-        dist = ((x - last_x)**2 + (y - last_y)**2)**0.5
+        last_x, last_y, _ = self.last_pose
+        dist = ((x - last_x) ** 2 + (y - last_y) ** 2) ** 0.5
 
         if dist > self.threshold:
-            self.save_pose(x, y)
+            self.save_pose(x, y, yaw)
 
-    ## @brief Guarda una nueva posición (x, y) en la lista y en el archivo de salida.
-    #  @param x Coordenada X de la posición.
-    #  @param y Coordenada Y de la posición.
-    def save_pose(self, x, y):
-        self.saved_coords.append((x, y))
-        self.last_pose = (x, y)
+    def save_pose(self, x, y, yaw):
+        self.saved_coords.append((x, y, yaw))
+        self.last_pose = (x, y, yaw)
 
         with open(self.output_path, 'a') as f:
-            f.write(f'{x},{y}\n')
+            f.write(f'{x},{y},{yaw}\n')
 
-        self.get_logger().info(f'Guardado: x={x:.2f}, y={y:.2f}')
+        self.get_logger().info(f'Guardado: x={x:.2f}, y={y:.2f}, yaw={yaw:.2f}')
 
 
-## @brief Función principal. Inicializa el nodo y mantiene la ejecución hasta interrupción del usuario.
-#  @param args Argumentos opcionales de línea de comandos.
 def main(args=None):
     rclpy.init(args=args)
     node = RouteRecorder()

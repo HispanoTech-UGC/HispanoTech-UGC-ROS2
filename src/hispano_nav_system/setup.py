@@ -37,6 +37,7 @@ setup(
             'waypoint_follower = hispano_nav_system.waypoint_follower:main',
             'route_recorder = hispano_nav_system.route_recorder:main',       
             'ps3_joy_teleop = hispano_nav_system.ps3_joy_teleop:main',
+            'route_follower = hispano_nav_system.route_follower:main',
             ],
     },
 )
