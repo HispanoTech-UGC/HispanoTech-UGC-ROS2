@@ -228,4 +228,68 @@ Desarrollado por el equipo HispanoTech (UGC).
 
 ---
 
+## Diagramas de Funcionamiento
+
+### Funcionamiento de SLAM (`hispano_slam`)
+
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant SLAM_Toolbox
+    participant RViz
+    participant Robot
+    Usuario->>SLAM_Toolbox: Inicia SLAM
+    SLAM_Toolbox->>Robot: Recibe datos de sensores
+    SLAM_Toolbox->>SLAM_Toolbox: Procesa y actualiza mapa
+    SLAM_Toolbox->>RViz: Publica mapa y poses
+    Usuario->>RViz: Visualiza mapeo en tiempo real
+```
+
+### Proceso de Carga de Mapas (`provide_hispano_map`)
+
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Map_Server
+    participant RViz
+    participant Robot
+    Usuario->>Map_Server: Lanza carga de mapa
+    Map_Server->>Robot: Publica mapa y transformaciones
+    Map_Server->>RViz: Publica mapa para visualización
+    Usuario->>RViz: Visualiza entorno estático
+```
+
+### Navegación Autónoma (`hispanotech_nav_system`)
+
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Nav2
+    participant AMCL
+    participant Planner
+    participant Controller
+    participant Robot
+    Usuario->>Nav2: Lanza sistema de navegación
+    Nav2->>AMCL: Inicializa localización
+    Usuario->>Nav2: Envía objetivo de navegación
+    Nav2->>Planner: Solicita ruta
+    Planner->>Controller: Envía ruta planificada
+    Controller->>Robot: Comandos de movimiento
+    Robot->>AMCL: Feedback de posición
+    AMCL->>Nav2: Actualiza localización
+```
+
+### Automatización con `hispanorunner.py`
+
+```mermaid
+flowchart TD
+    A[Inicia hispanorunner.py] --> B[Lanza Gazebo]
+    B --> C[Lanza SLAM o carga mapa]
+    C --> D[Teleoperación o navegación]
+    D --> E[Guarda mapa si es necesario]
+    E --> F[Finaliza o repite flujo]
+```
+
+---
+
 Este proyecto está en desarrollo activo. ¡Contribuciones y sugerencias son bienvenidas!
