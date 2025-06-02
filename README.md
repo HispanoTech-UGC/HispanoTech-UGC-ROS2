@@ -1,28 +1,84 @@
 # HispanoTech-UGC-ROS2
 
-Repositorio oficial de exploración y navegación autónoma con ROS2 para TurtleBot3, desarrollado por el equipo HispanoTech dentro del marco de prácticas y proyectos académicos.
+[![Estado](https://img.shields.io/badge/estado-en%20desarrollo-blue)](https://github.com/HispanoTech-UGC/HispanoTech-UGC-ROS2/)
+[![ROS2](https://img.shields.io/badge/ROS2-Humble%20Hawksbill-8A2BE2)](https://docs.ros.org/en/humble/index.html)
+[![Licencia](https://img.shields.io/badge/licencia-MIT-green)](LICENSE)
 
-**Repositorio GitHub:**  
-https://github.com/HispanoTech-UGC/HispanoTech-UGC-ROS2/
+Repositorio oficial para exploración, mapeo y navegación autónoma con ROS2 en TurtleBot3, desarrollado por el equipo HispanoTech para fines académicos y de investigación.
 
 ---
 
-## Descripción general
+## Tabla de Contenidos
+1. [Descripción General](#descripción-general)
+2. [Arquitectura del Sistema](#arquitectura-del-sistema)
+3. [Estructura del Repositorio](#estructura-del-repositorio)
+4. [Instalación y Requisitos](#instalación-y-requisitos)
+5. [Uso Básico](#uso-básico)
+6. [Flujo de Trabajo Típico](#flujo-de-trabajo-típico)
+7. [Paquetes Incluidos](#paquetes-incluidos)
+8. [Guardar y Reutilizar Mapas](#guardar-y-reutilizar-mapas)
+9. [Créditos y Licencia](#créditos-y-licencia)
 
-Este proyecto se compone de múltiples paquetes ROS2 organizados para cubrir dos grandes funcionalidades:
+---
+
+## Descripción General
+
+Este proyecto ROS2 integra múltiples paquetes para cubrir dos grandes funcionalidades:
 
 - **SLAM en tiempo real:** mapeado del entorno con `slam_toolbox`.
 - **Navegación/localización sobre mapa estático:** uso de `map_server` y mapas previamente generados.
 
-El sistema está diseñado para ser modular y escalable, permitiendo la integración de nuevos componentes y funcionalidades según sea necesario.
+El sistema es modular y escalable, permitiendo la integración de nuevos componentes y funcionalidades.
 
 ---
 
-## Estructura del repositorio
+## Arquitectura del Sistema
 
-La estructura del repositorio está organizada de la siguiente manera:
+### Diagrama de Alto Nivel
 
+```mermaid
+graph TD
+    subgraph SLAM
+        A[SLAM Toolbox]
+    end
+    subgraph Mapas
+        B[Map Server]
+    end
+    subgraph Localización
+        C[AMCL]
+    end
+    subgraph Navegación
+        D[Nav2 Planner]
+        E[Nav2 Controller]
+    end
+    subgraph Robot
+        F[TurtleBot3]
+    end
+    A -- Genera mapa --> B
+    B -- Proporciona mapa --> C
+    C -- Localización --> D
+    D -- Planifica ruta --> E
+    E -- Controla movimiento --> F
+    F -- Feedback --> C
 ```
+
+### Diagrama de Flujo de Uso Típico
+
+```mermaid
+flowchart TD
+    S1[Iniciar Gazebo] --> S2[Ejecutar SLAM]
+    S2 --> S3[Explorar y mapear]
+    S3 --> S4[Guardar mapa]
+    S4 --> S5[Cargar mapa estático]
+    S5 --> S6[Localización y navegación]
+    S6 --> S7[Automatización con hispanorunner.py]
+```
+
+---
+
+## Estructura del Repositorio
+
+```text
 HispanoTech-UGC-ROS2/
 ├── src/
 │   ├── hispano_slam/              # SLAM en tiempo real con slam_toolbox
@@ -42,88 +98,71 @@ HispanoTech-UGC-ROS2/
 │       ├── config/                # Configuración de parámetros de navegación
 │       └── bt_trees/              # Árboles de comportamiento para Nav2
 ├── hispanorunner.py               # Script Python para lanzar el sistema paso a paso
+├── docs/                          # Documentación e imágenes
 ├── install/, build/, log/         # Directorios generados tras compilar
+├── README.md, LICENSE             # Documentación y licencia
 ```
 
 ---
 
-## Diagrama de arquitectura
+## Instalación y Requisitos
 
-A continuación se presenta un diagrama de alto nivel que describe la arquitectura del sistema:
+### Requisitos Principales
 
-```mermaid
-graph TD
-    A[SLAM Toolbox] -->|Genera mapa| B[Map Server]
-    B -->|Proporciona mapa| C[AMCL]
-    C -->|Localización| D[Nav2 Planner]
-    D -->|Planifica ruta| E[Nav2 Controller]
-    E -->|Controla movimiento| F[TurtleBot3]
-    F -->|Feedback| C
+- Ubuntu 22.04
+- ROS2 Humble Hawksbill
+- TurtleBot3 (Burger/Waffle Pi)
+
+### Instalación de Dependencias
+
+```bash
+sudo apt update && sudo apt install \
+  ros-humble-slam-toolbox \
+  ros-humble-nav2-map-server \
+  ros-humble-rviz2 \
+  ros-humble-turtlebot3* \
+  ros-humble-tf2-tools
+```
+
+### Clonación y Compilación
+
+```bash
+git clone https://github.com/HispanoTech-UGC/HispanoTech-UGC-ROS2.git
+cd HispanoTech-UGC-ROS2
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install
+source install/setup.bash
 ```
 
 ---
 
-## Paquetes incluidos
+## Uso Básico
 
-### 1. `hispano_slam`
-
-Paquete para realizar SLAM en tiempo real con `slam_toolbox`.
-
-- Lanza `slam_toolbox` en modo síncrono.
-- Visualiza el entorno en RViz.
-- Mapea mientras el robot se mueve.
-- Parámetros personalizados en `config/slam_params.yaml`.
-
-Lanzamiento:
+### 1. Lanzar SLAM en tiempo real
 
 ```bash
 ros2 launch hispano_slam slam_toolbox.launch.py
 ```
 
----
+### 2. Guardar el mapa generado
 
-### 2. `provide_hispano_map`
+```bash
+ros2 run nav2_map_server map_saver_cli -f ~/nombre_mapa
+```
 
-Paquete para cargar un mapa ya existente mediante `map_server`.
-
-- Carga `.yaml` y `.pgm` del mapa.
-- Lanza RViz y visualiza el entorno.
-- Usa `lifecycle_manager` y transformaciones necesarias.
-
-Lanzamiento:
+### 3. Cargar un mapa estático
 
 ```bash
 ros2 launch provide_hispano_map provide_hispano_map.launch.py
 ```
 
----
-
-### 3. `hispanotech_nav_system`
-
-Paquete para la navegación autónoma utilizando mapas estáticos y el sistema de navegación de Nav2.
-
-- Configuración personalizada para `planner_server`, `controller_server` y `bt_navigator`.
-- Integración con `map_server` y `amcl` para localización.
-- Parámetros en `config/nav_params.yaml`.
-
-Lanzamiento:
+### 4. Lanzar el sistema de navegación autónoma
 
 ```bash
 ros2 launch hispanotech_nav_system navigation.launch.py
 ```
 
----
-
-### 4. `hispanorunner.py`
-
-Script Python auxiliar que automatiza el lanzamiento en orden de:
-
-- Gazebo
-- Mapa estático
-- Teleoperación
-- Carga y activación del mapa
-
-Ejecución:
+### 5. Automatización completa
 
 ```bash
 python3 hispanorunner.py
@@ -131,7 +170,40 @@ python3 hispanorunner.py
 
 ---
 
-## Guardar mapas con SLAM
+## Flujo de Trabajo Típico
+
+1. **Simulación:** Iniciar Gazebo y el entorno simulado.
+2. **SLAM:** Ejecutar SLAM y explorar el entorno.
+3. **Guardar mapa:** Al finalizar, guardar el mapa generado.
+4. **Cargar mapa:** Usar el mapa guardado para navegación autónoma.
+5. **Navegación:** Lanzar el sistema de navegación y enviar objetivos.
+6. **Automatización:** Usar `hispanorunner.py` para simplificar el proceso.
+
+---
+
+## Paquetes Incluidos
+
+### 1. `hispano_slam`
+- SLAM en tiempo real con `slam_toolbox`.
+- Visualización en RViz.
+- Parámetros en `config/slam_params.yaml`.
+
+### 2. `provide_hispano_map`
+- Carga mapas estáticos (`.yaml` y `.pgm`).
+- Visualización en RViz.
+- Uso de `lifecycle_manager` y transformaciones.
+
+### 3. `hispanotech_nav_system`
+- Navegación autónoma con Nav2.
+- Configuración personalizada para `planner_server`, `controller_server`, `bt_navigator`.
+- Integración con `map_server` y `amcl`.
+
+### 4. `hispanorunner.py`
+- Script Python para lanzar todo el sistema paso a paso (simulación, mapa, teleoperación, navegación).
+
+---
+
+## Guardar y Reutilizar Mapas
 
 Tras completar la exploración:
 
@@ -140,31 +212,20 @@ ros2 run nav2_map_server map_saver_cli -f ~/nombre_mapa
 ```
 
 Esto genera:
-
 - `nombre_mapa.yaml`
 - `nombre_mapa.pgm`
 
-Puedes moverlos al directorio `provide_hispano_map/map/` para su reutilización.
+Mueve estos archivos a `src/provide_hispano_map/map/` para su reutilización.
 
 ---
 
-## Requisitos principales
+## Créditos y Licencia
 
-```bash
-sudo apt install   ros-humble-slam-toolbox   ros-humble-nav2-map-server   ros-humble-rviz2   ros-humble-turtlebot3*   ros-humble-tf2-tools
-```
+Desarrollado por el equipo HispanoTech (UGC).
 
----
-
-## Estado actual del proyecto
-
-- [x] SLAM funcionando en tiempo real con RViz
-- [x] Guardado y reutilización de mapas
-- [x] Navegación con mapa estático cargado
-- [x] Visualización completa con RViz
-- [x] Automatización con `hispanorunner.py`
-- [x] Sistema de navegación autónoma con `hispanotech_nav_system`
+- [Repositorio principal](https://github.com/HispanoTech-UGC/HispanoTech-UGC-ROS2/)
+- Licencia: MIT
 
 ---
 
-Este proyecto está en desarrollo activo dentro del equipo HispanoTech.
+Este proyecto está en desarrollo activo. ¡Contribuciones y sugerencias son bienvenidas!
