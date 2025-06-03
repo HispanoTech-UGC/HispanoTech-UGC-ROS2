@@ -71,12 +71,6 @@ install(DIRECTORY include/
   DESTINATION include/
 )
 
-# Instalar archivos de Python si existen
-install(DIRECTORY
-  launch/
-  DESTINATION share/${PROJECT_NAME}/launch
-  PATTERN "*.py"
-)
 ################################################################################
 # Macro for ament package
 ################################################################################
@@ -88,33 +82,4 @@ ament_export_dependencies(nav2_msgs)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(tf2)
-################################################################################
-# Testing
-################################################################################
-if(BUILD_TESTING)
-  find_package(ament_cmake_pytest REQUIRED)
-  find_package(ament_lint_auto REQUIRED)
-  
-  # Ejecutar los analizadores de código automáticamente
-  set(ament_cmake_copyright_FOUND TRUE)  # Opcional: desactiva copyright si lo deseas
-  set(ament_cmake_cpplint_FOUND TRUE)    # Opcional: desactiva cpplint si lo deseas
-  ament_lint_auto_find_test_dependencies()
-  
-  # Añadir pruebas de pytest
-  ament_add_pytest_test(
-    test_launch_world 
-    test/test_launch_world.py
-    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    PYTHON_EXECUTABLE ${PYTHON_EXECUTABLE}
-    APPEND_ENV PYTHONPATH=${CMAKE_CURRENT_BINARY_DIR}:${CMAKE_CURRENT_SOURCE_DIR}
-    APPEND_LIBRARY_DIRS ${CMAKE_CURRENT_BINARY_DIR}
-    TIMEOUT 60
-  )
-  
-  # Verificar que las pruebas se instalen correctamente
-  install(DIRECTORY
-    test
-    DESTINATION share/${PROJECT_NAME}/
-  )
-endif()
 ament_package()

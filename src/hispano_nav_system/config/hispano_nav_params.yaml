@@ -45,7 +45,6 @@ amcl:
       roll: 0.0
       pitch: 0.0
       yaw: 0.0
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 
 
@@ -93,7 +92,6 @@ bt_navigator:
     - nav2_navigate_through_poses_action_bt_node
     - nav2_navigate_to_pose_action_bt_node
     - nav2_remove_passed_goals_action_bt_node
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 bt_navigator_rclcpp_node:
   ros__parameters:
@@ -163,7 +161,6 @@ controller_server:
       RotateToGoal.scale: 32.0
       RotateToGoal.slowing_factor: 5.0
       RotateToGoal.lookahead_time: -1.0
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 controller_server_rclcpp_node:
   ros__parameters:
@@ -254,7 +251,6 @@ map_server:
   ros__parameters:
     use_sim_time: True
     yaml_filename: "hispano_map.yaml"
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 map_saver:
   ros__parameters:
@@ -273,7 +269,6 @@ planner_server:
       tolerance: 0.5
       use_astar: false
       allow_unknown: true
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 planner_server_rclcpp_node:
   ros__parameters:
@@ -299,7 +294,6 @@ recoveries_server:
     max_rotational_vel: 1.0
     min_rotational_vel: 0.4
     rotational_acc_lim: 3.2
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 waypoint_follower:
   ros__parameters:
@@ -310,39 +304,7 @@ waypoint_follower:
       plugin: "nav2_waypoint_follower::WaitAtWaypoint"
       enabled: True
       waypoint_pause_duration: 0
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
 
 robot_state_publisher:
   ros__parameters:
     use_sim_time: True
-
-route_follower:
-  ros__parameters:
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
-
-route_recorder:
-  ros__parameters:
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
-
-joy_node:
-  ros__parameters:
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
-
-ps3_joy_teleop:
-  ros__parameters:
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
-
-lifecycle_manager_pathplanner:
-  ros__parameters:
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
-
-rviz2:
-  ros__parameters:
-    use_sim_time: True
-    config_file_path: "/home/javier/HispanoTech-UGC-ROS2/src/hispano_nav_system/config/hispano_nav_params.yaml"
