@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hispano_weapon_detector</name>
+  <version>0.0.0</version>
+  <description>Detector de personas y armas usando Roboflow en ROS 2</description>
+  <maintainer email="prebdem@epsg.upv.es">vboxuser</maintainer>
+  <license>MIT</license>
+
+  <!-- 1) Aquí añadimos ament_python como buildtool_depend -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Dependencias ROS 2 -->
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>std_msgs</depend>
+
+  <!-- Dependencias Python / pip -->
+  <exec_depend>roboflow</exec_depend>
+  <exec_depend>opencv-python</exec_depend>
+  <exec_depend>numpy</exec_depend>
+
+  <!-- Dependencias de test -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <!-- 2) build_type DENTRO de <export> -->
+    <build_type>ament_python</build_type>
+  </export>
+</package>
